@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.3.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<SVG version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/SVG" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 150 150" style="enable-background:new 0 0 150 150;" xml:space="preserve">
 <style type="text/css">
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#F3BA2F;}
@@ -8,4 +8,4 @@
 <path class="st0" d="M50.2,64.7l24.6-24.6l24.6,24.6l14.3-14.3L74.8,11.5L35.9,50.4L50.2,64.7z M11.5,74.8l14.3-14.3l14.3,14.3
 	L25.8,89.1L11.5,74.8z M74.8,109.5L50.2,84.9L35.9,99.2l0,0l38.9,38.9l38.9-38.9l0,0L99.4,84.9L74.8,109.5z M109.5,74.8l14.3-14.3
 	l14.3,14.3l-14.3,14.3L109.5,74.8z M74.8,60.3l14.5,14.5h0l0,0L74.8,89.3L60.3,74.8l0,0l0,0l2.5-2.5l1.2-1.2L74.8,60.3z"/>
-</SVG>
+</svg>
