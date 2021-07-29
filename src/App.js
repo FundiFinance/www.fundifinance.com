@@ -1,18 +1,23 @@
 import "./App.css";
-import NavBar from "./navbar";
-import Home from "./home";
+import { NavBar } from "./components/NavBar";
+import { Home } from "./components/Home";
 import { Switch, Route, BrowserRouter, Redirect } from "react-router-dom";
+import { AuthProvider } from "./components/AuthContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <NavBar />
-        <Switch>
-          <Route path="/"><Home /></Route>
-          <Redirect from="*" to='/' />
-        </Switch>
-      </div>
+      <AuthProvider>
+        <div className="App">
+          <NavBar />
+          <Switch>
+            <Route path="/">
+              <Home />
+            </Route>
+            <Redirect from="*" to="/" />
+          </Switch>
+        </div>
+      </AuthProvider>
     </BrowserRouter>
   );
 }

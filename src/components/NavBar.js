@@ -1,27 +1,39 @@
-import ConnectButton from "../connectButton";
+import React, { useState } from "react";
 
-function NavBar() {
+import { ConnectButton } from "./ConnectButton";
+import { ConnectModal } from "./ConnectModal";
+
+export function NavBar() {
+  const [isModalOpened, setIsModalOpened] = useState(false);
+
   return (
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-      <div class="container-fluid px-lg-5">
-        <a class="navbar-brand" href="#page-top">
+    <nav className="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div className="container-fluid px-lg-5">
+        <a className="navbar-brand" href="#page-top">
           <img
             src="/img/FF-logo-xs.png"
             alt=""
             width="80"
             height="auto"
-            class="d-inline-block align-text-top"
+            className="d-inline-block align-text-top"
           />
         </a>
-        <ConnectButton />
-        <div class="nav-container" id="menuToggle">
+        <ConnectButton
+          isModalOpened={isModalOpened}
+          setIsModalOpened={setIsModalOpened}
+        />
+        <ConnectModal
+          isModalOpened={isModalOpened}
+          setIsModalOpened={setIsModalOpened}
+        />
+        <div className="nav-container" id="menuToggle">
           <input type="checkbox" />
 
           <span></span>
           <span></span>
           <span></span>
 
-          <ul id="menu" class="nav-toggle text-center">
+          <ul id="menu" className="nav-toggle text-center">
             <a href="#page-top">
               <li>Home</li>
             </a>
@@ -49,52 +61,52 @@ function NavBar() {
               <li>Buy CRA</li>
             </a>
             <hr />
-            <div class="my-4">
-              <div class="small text-center text-muted my-2">
-                <a class="btn btn-link" href="mailto:founder@fundifinance.com">
+            <div className="my-4">
+              <div className="small text-center text-muted my-2">
+                <a className="btn btn-link" href="mailto:founder@fundifinance.com">
                   founder@fundifinance.com
                 </a>
               </div>
-              <div class="social-icons text-center my-4">
+              <div className="social-icons text-center my-4">
                 <a
                   rel="noreferrer"
-                  class="social-icon"
+                  className="social-icon"
                   target="_blank"
                   href="https://twitter.com/FundiFinance"
                 >
-                  <i class="fab fa-twitter"></i>
+                  <i className="fab fa-twitter"></i>
                 </a>
                 <a
                   rel="noreferrer"
-                  class="social-icon"
+                  className="social-icon"
                   target="_blank"
                   href="https://fundifinance.medium.com/"
                 >
-                  <i class="fab fa-medium"></i>
+                  <i className="fab fa-medium"></i>
                 </a>
                 <a
                   rel="noreferrer"
-                  class="social-icon"
+                  className="social-icon"
                   target="_blank"
                   href="https://discord.gg/hxYr4SJA"
                 >
-                  <i class="fab fa-discord"></i>
+                  <i className="fab fa-discord"></i>
                 </a>
                 <a
                   rel="noreferrer"
-                  class="social-icon"
+                  className="social-icon"
                   target="_blank"
                   href="https://t.me/FundiFinance"
                 >
-                  <i class="fab fa-telegram"></i>
+                  <i className="fab fa-telegram"></i>
                 </a>
                 <a
                   rel="noreferrer"
-                  class="social-icon"
+                  className="social-icon"
                   target="_blank"
                   href="https://github.com/FundiFinance"
                 >
-                  <i class="fab fa-github"></i>
+                  <i className="fab fa-github"></i>
                 </a>
               </div>
             </div>
@@ -104,5 +116,3 @@ function NavBar() {
     </nav>
   );
 }
-
-export default NavBar;
