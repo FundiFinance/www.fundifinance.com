@@ -1,2 +1,2 @@
 # website
-Funfi Finance website
+Fundi Finance website
