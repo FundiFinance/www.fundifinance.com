@@ -377,10 +377,6 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
-borderps {
-  border: 5px solid #b9bc9f;
-}
-
 input,
 button,
 select,
@@ -12203,6 +12199,8 @@ lottie-player {
 #portfolio .container-xxl .portfolio-box {
   position: relative;
   display: block;
+  border: 2px solid #b9bc9f;
+  margin: 3px
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption,
@@ -12222,7 +12220,7 @@ lottie-player {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(244, 98, 58, 0.9);
+  background: #b9bc9f;
   transition: opacity 0.25s ease;
   text-align: center;
 }
