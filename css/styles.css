@@ -377,6 +377,10 @@ button:focus:not(:focus-visible) {
   outline: 0;
 }
 
+borderps {
+  border: 5px solid #b9bc9f;
+}
+
 input,
 button,
 select,
