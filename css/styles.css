@@ -3602,7 +3602,7 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-primary:hover {
-  color: #121212;
+  color: #121212!important;
   background-color: #f9f9f9;
   border-color: #f9f9f9;
 }
@@ -12137,7 +12137,7 @@ header.masthead {
 header.masthead h1,
 header.masthead .h1 {
   font-size: 1.8rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 #wallets img {
@@ -12157,21 +12157,21 @@ lottie-player {
   }
 
   header.masthead p {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 100;
   }
 
   header.masthead h1,
   header.masthead .h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1,
   header.masthead .h1 {
-    font-size: 3.5rem;
-    line-height: 4.5rem;
+    font-size: 2.5rem;
+    line-height: 2.75rem;
   }
 }
 
