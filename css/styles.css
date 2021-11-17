@@ -5213,6 +5213,22 @@ fieldset:disabled .btn {
   border-radius: calc(0.25rem - 1px);
 }
 
+.card-img-top {
+  -webkit-filter: grayscale(100%);
+  -moz-filter:    grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+  filter: gray; 
+}
+.card-img-top:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+  -moz-filter:    grayscale(0%);
+  -ms-filter:     grayscale(0%);
+  -o-filter:      grayscale(0%);
+  cursor: pointer;
+}
+
 .card-img,
 .card-img-top,
 .card-img-bottom {
@@ -5234,6 +5250,7 @@ fieldset:disabled .btn {
 .card-group > .card {
   margin-bottom: 0.75rem;
 }
+
 
 @media (min-width: 576px) {
   .card-group {
@@ -11998,7 +12015,7 @@ body {
 }
 
 .page-section {
-  padding: 4rem 0;
+  padding: 2rem;
 }
 
 .text-white-75 {
