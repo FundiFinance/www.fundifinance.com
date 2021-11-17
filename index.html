@@ -38,9 +38,11 @@
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-    <!-- Animate Library-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- Add icon library -->
+    <!-- Animon Library-->
+    <link rel="stylesheet" href="https://unpkg.com/animon@1.0.1/dist/animon.css"/>
+    <script type="text/javascript" src="https://unpkg.com/animon@1.0.1/dist/animon.iife.js"></script>
+
+     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Lottie Files)-->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -53,7 +55,7 @@
         <!-- NAV CONTAINER -->
         <div class="container-fluid px-lg-5">
             <a class="navbar-brand" href="#page-top">
-                <img src="assets/img/FF-logo-xs.png" alt="" width="120" height="auto"
+                <img src="assets/img/Colorlogofundinobg.svg" alt="" width="280" height="auto"
                     class="d-inline-block align-text-top">
             </a>
             <!-- Button trigger modal Desk -->
@@ -161,25 +163,26 @@
     <header class="masthead">
         <div class="container h-100">
             <div class="row flex-row-reverse gx-4 h-100 justify-content-center align-items-center">
-                <div class="col-md-9 col-sm-12 fundilogo">
+                <!-- <div class="col-md-9 col-sm-12 fundilogo">
                     <img src="/assets/img/Colorlogofundinobg.svg" alt="Fundi Finance Logo" width="100%" height="auto" />
-                </div>
+                </div> -->
                 <!-- Lottie Animation-->
                 <div class="col-md-7 col-sm-12">
                     <lottie-player src="js/lottie/hologram.json" background="transparent" speed="1" loop autoplay>
                     </lottie-player>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <h1 class="text-white font-weight-bold">DECENTRALIZED AUTONOMOUS ORGANIZATION FOR THE FUTURE OF REAL WORLD ASSETS</h1>
-                    <p class="text-white">An ecosystem that shares governance with the investor community</p>
-                    <a class="btn btn-outline-primary btn-lg" href="#about">EXPLORE</a>
+                    <h1 class="text-white font-weight-bold animonItem">DECENTRALIZED AUTONOMOUS ORGANIZATION FOR THE FUTURE OF REAL WORLD ASSETS</h1>
+                    <p class="text-white animonItem" data-delay="400">An ecosystem that shares governance with the investor community</p>
+                    <a class="btn btn-outline-primary btn-lg"  href="#about">EXPLORE</a>
                 </div>
             </div>
         </div>
     </header>
-
-    <div class="col-lg-13 text-center">
-        <h1 class="text-primary my-4 mt-0 animate__animated animate__zoomIn animate__delay-0.75s">Maximize your personal wealth</h1>
+    
+    <!-- Slogan-->
+    <div class="col-md-6 offset-md-3 text-center">
+        <h1 class="text-primary my-4 mt-0 animonItem" data-effect="fadeInUp">Maximize your total wealth</h1>
     </div>
 
     <!-- About-->
@@ -197,7 +200,7 @@
                         data-mouse-force="10" data-layer-count="3" data-depth="4" data-add-timestamp="true"
                         src="assets/img/fundi-finance-white.png" alt="">
                 </div>
-                <div class="col-lg-8 text-center">
+                <div class="col-lg-8 text-center animonItem" data-effect="fadeInUp" data-delay="100">
                     <h2 class="text-primary my-4 mt-0">What is Fundi Finance?</h2>
                     <hr class="divider" />
                     <h5 class="text-white mb-4 my-4">Fundi Finance is a yield generating hybrid for digital assets / security tokens / NFT’s,
@@ -206,14 +209,15 @@
                          over their entire self-worth for the first time ever!
                     </h5>
                     <a class="btn btn-outline-primary text-white mb-4 my-4" target="_blank" href="empty">Download our ecosystem flowchart <i class="fa fa-file-pdf"></i></a>
-                    <p></p>
-                    <p></p>
-                    <h2 class="text-primary my-4 mt-0">Vision</h2>
+                
+                    <div class="row my-5 animonItem" data-effect="fadeInUp" data-delay="200">
+                    <h2 class="text-primary">Vision</h2>
                     <hr class="divider" />
                     <h5 class="text-white mb-4 my-4">Fundi Finance provides a decentralised investor-controlled governance system 
                         that is powered by a truly digital multi-layered asset-commerce ecosystem to brigde decentralised and 
-                        centralised finance under one hybrid financial hub to leverage the future of real world assets
+                        centralised finance under one hybrid financial hub to leverage the future of real world assets.
                     </h5>
+                </div>
                     <!-- <div class="col-sm-2 mx-auto" width="56px"><a href="#services">
                             <lottie-player src="js/lottie/scroll-down.json" style="width: 3rem;" background="
                                 transparent" speed="1" loop autoplay>
@@ -225,6 +229,7 @@
         </div>
     </section>
     <!-- Portfolio-->
+<section class="page-section text-white" id="portfolio">
     <div id="portfolio">
         <h2 class="text-center text-primary mt-0">Problems solved by Fundi Finance</h2>
         <hr class="divider" />
@@ -287,6 +292,14 @@
             </div>
         </div>
     </div>
+</section>
+
+    <!-- SLOGAN-->
+    <div class="col-md-8 offset-md-2 my-4">
+        <h1 class="text-primary text-center mt-0 animonItem" data-effect="fadeInUp">Worlds first AMM for security tokens/ NFT's/digital and physical assets
+        </h1>
+    </div>
+
     <!-- Call to action-->
     <section class="page-section text-white" id="services">
         <div class="container py-5 px-4 px-lg-5">
@@ -317,9 +330,10 @@
         </div>
         </div>
     </section>
-
+    
+    <!-- SLOGAN-->
     <div class="col-lg-13 text-center">
-        <h2 class="text-primary my-4 mt-0">First ever community-governed protocol</h2>
+        <h1 class="text-primary my-4 mt-0 animonItem" data-effect="fadeInUp">100% investor governed protocol</h1>
     </div>
 
     <!-- GOVERNANCE-->
@@ -333,6 +347,12 @@
             </div>
         </div>
     </section>
+
+    <!-- SLOGAN-->
+    <div class="col-lg-13 text-center">
+        <h1 class="text-primary my-4 mt-0 animonItem" data-effect="fadeInUp">Colleterial backed loans of digital and physical assets</h1>
+    </div>
+
     <!-- Tokens-->
     <section class="page-section text-white" id="Token">
         <div class="container py-5 px-4 px-lg-5">
@@ -341,7 +361,7 @@
                 <hr class="divider" />
             </div>
             <div class="row d-flex py-4 d-flex justify-content-center">
-                <div class="col-md-4 card bg-dark border-secondary">
+                <div class="col-md-4 card bg-dark border-secondary animonItem" data-effect="fadeInUp">
                     <div class="mb-2 text-center"><i class="bi-gem fs-1 text-primary"></i></div>
                     <h3 class="text-primary mt-0 text-center">FF Token</h3>
                     <ul class="list-display list-checkmarks">
@@ -353,7 +373,7 @@
                         <li>KYC: No</li>                        
                     </ul>
                 </div>
-                <div class="col-md-4 card bg-dark border-secondary">
+                <div class="col-md-4 card bg-dark border-secondary animonItem" data-effect="fadeInUp" data-delay="100">
                     <div class="mb-2 text-center"><i class="bi-laptop fs-1 text-primary"></i></div>
                     <h3 class="text-primary mt-0 text-center">CRA Token</h3>
                     <ul class="list-display list-checkmarks">
@@ -366,7 +386,7 @@
                         <li>KYC: No</li>
                     </ul>
                 </div>
-                <div class="col-md-4 card bg-dark border-secondary">
+                <div class="col-md-4 card bg-dark border-secondary animonItem" data-effect="fadeInUp" data-delay="200">
                     <div class="mb-2 text-center"><i class="bi-globe fs-1 text-primary"></i></div>
                     <h3 class="text-primary text-center mt-0 text-center">FFST Token</h3>
                     <ul class="list-display list-checkmarks">
@@ -384,8 +404,14 @@
         </div>
         </div>
     </section>
+        <!-- SLOGAN-->
+        <div class="col-md-8 offset-md-2 my-4">
+            <h1 class="text-primary text-center mt-0 animonItem" data-effect="fadeInUp">
+                Colleterial backed loans of digital and physical assets</h1>
+        </div>
+
     <!-- ROADMAP -->
-    
+
     <!-- Call to action-->
     <section class="page-section text-white" id="roadmap">
         <div class="container py-5 px-4 px-lg-5">
@@ -478,6 +504,13 @@
         </div>
         </div>
     </section>
+
+    <!-- SLOGAN-->
+    <div class="container">
+    <div class="row col-lg-13 text-center">
+        <h1 class="text-primary my-4 mt-0 animonItem" data-effect="fadeInUp">Fundi Finance, your key to unlock liquidity from you equity tokenise your physical assets and make them work for you</h1>
+    </div></div>
+
     <!-- Wallets-->
     <section class="page-section" id="wallets">
         <div class="container">
@@ -540,6 +573,10 @@
 
     <!-- ***SIDEBAR MENU*** -->
     <script src="js/sidenav.js"></script>
+    
+    <script type="text/javascript">
+        Animon.animon();
+        </script>
 </body>
 
 </html>

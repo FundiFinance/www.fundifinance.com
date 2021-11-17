@@ -12192,8 +12192,8 @@ lottie-player {
 #portfolio .container-xxl .portfolio-box {
   position: relative;
   display: block;
-  border: 2px solid #b9bc9f;
-  margin: 3px;
+  border: 1px solid #323232;
+  margin: 1rem;
 }
 
 #portfolio .container-fluid .portfolio-box .portfolio-box-caption,
@@ -12213,9 +12213,10 @@ lottie-player {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: #4b4d3d;
-  transition: opacity 0.25s ease;
+  background: #121212;
   text-align: center;
+  border: 1px solid #C5C8A9;
+  transition: opacity 0.25s ease;
 }
 
 #portfolio
