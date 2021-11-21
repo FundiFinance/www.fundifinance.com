@@ -30,11 +30,18 @@
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Carousel SCSS-->
+    <link rel="stylesheet" href="/css/carousel-style.css" rel="stylesheet">
     <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
+    <!-- Animon Library-->
+    <link rel="stylesheet" href="https://unpkg.com/animon@1.0.1/dist/animon.css" />
+    <script type="text/javascript" src="https://unpkg.com/animon@1.0.1/dist/animon.iife.js"></script>
+
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Lottie Files)-->
@@ -48,19 +55,19 @@
         <!-- NAV CONTAINER -->
         <div class="container-fluid px-lg-5">
             <a class="navbar-brand" href="#page-top">
-                <img src="assets/img/FF-logo-xs.png" alt="" width="80" height="auto"
+                <img src="assets/img/Colorlogofundinobg.svg" alt="" width="280" height="auto"
                     class="d-inline-block align-text-top">
             </a>
             <!-- Button trigger modal Desk -->
-            <button type="button" id="wallet-desk" class="btn btn-primary ms-auto me-4 my-3 my-lg-0"
+            <!-- <button type="button" id="wallet-desk" class="btn btn-primary ms-auto me-4 my-3 my-lg-0"
                 data-bs-toggle="modal" data-bs-target="#walletModal">
                 CONNECT WALLET
-            </button>
+            </button> -->
             <!-- Button trigger modal mobile -->
-            <button type="button" class="btn btn-sm btn-primary d-block d-sm-none" data-bs-toggle="modal"
+            <!-- <button type="button" class="btn btn-sm btn-primary d-block d-sm-none" data-bs-toggle="modal"
                 data-bs-target="#walletModal">
                 WALLETS
-            </button>
+            </button> -->
             <!-- SIDEBAR -->
             <div class="nav-container" id="menuToggle">
                 <!--
@@ -84,20 +91,23 @@
                     <a href="#page-top">
                         <li>Home</li>
                     </a>
-                    <a href="#about">
-                        <li>About</li>
+                    <a target="_blank" href="">
+                        <li>Staking - coming soon</li>
                     </a>
-                    <a target="_blank" href="#!">
+                    <a target="_blank" href="https://vote.fundifinance.com">
+                        <li>Voting</li>
+                    </a>
+                    <a target="_blank" href="https://fundi-finance-1.gitbook.io/fundi-finance">
                         <li>Docs</li>
                     </a>
-                    <a target="_blank" href="#!">
+                    <!-- <a target="_blank" href="#!">
                         <li>Disclaimer</li>
-                    </a>
+                    </a> -->
                     <a target="_blank" href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d">
-                        <li>Buy FF</li>
+                        <li>FF on BSCScan</li>
                     </a>
                     <a target="_blank" href="https://bscscan.com/token/0xd6368dfd288a3d9ac769889c0ddfa7d0e20d5c29">
-                        <li>Buy CRA</li>
+                        <li>CRA on BSCScan</li>
                     </a>
                     <hr>
                     <div class="my-4">
@@ -109,12 +119,14 @@
                                     class="fab fa-twitter"></i></a>
                             <a class="social-icon" target="_blank" href="https://fundifinance.medium.com/"><i
                                     class="fab fa-medium"></i></a>
-                            <a class="social-icon" target="_blank" href="https://discord.gg/hxYr4SJA"><i
+                            <a class="social-icon" target="_blank" href="https://discord.gg/sr8EJP5hhF"><i
                                     class="fab fa-discord"></i></a>
                             <a class="social-icon" target="_blank" href="https://t.me/FundiFinance"><i
                                     class="fab fa-telegram"></i></a>
                             <a class="social-icon" target="_blank" href="https://github.com/FundiFinance"><i
                                     class="fab fa-github"></i></a>
+                            <a class="social-icon" target="_blank" href="https://www.tiktok.com/@fundifinance?"><i
+                                    class="fab fa-tiktok"></i></a>
                         </div>
                     </div>
                 </ul>
@@ -124,7 +136,7 @@
     <!-- //SIDEBAR -->
 
     <!-- CONNECT WALLET MODAL -->
-    <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
+    <!-- <div class="modal fade" id="walletModal" tabindex="-1" aria-labelledby="walletModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-sm">
             <div class="modal-content">
                 <div class="modal-header">
@@ -145,26 +157,36 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Masthead-->
     <header class="masthead">
         <div class="container h-100">
             <div class="row flex-row-reverse gx-4 h-100 justify-content-center align-items-center">
+                <!-- <div class="col-md-9 col-sm-12 fundilogo">
+                    <img src="/assets/img/Colorlogofundinobg.svg" alt="Fundi Finance Logo" width="100%" height="auto" />
+                </div> -->
                 <!-- Lottie Animation-->
                 <div class="col-md-7 col-sm-12">
                     <lottie-player src="js/lottie/hologram.json" background="transparent" speed="1" loop autoplay>
                     </lottie-player>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <h1 class="text-white font-weight-bold">DECENTRALIZED FINANCE PROTOCOL</h1>
-                    <p class="text-white">A governing board that shares governance with its investor community
-                    </p>
-                    <a class="btn btn-outline-primary btn-lg" href="#about">EXPLORE</a>
+                    <h1 class="text-white font-weight-bold animonItem">DECENTRALIZED AUTONOMOUS ORGANIZATION FOR THE
+                        FUTURE OF REAL WORLD ASSETS</h1>
+                    <p class="text-white animonItem" data-delay="400">An ecosystem that shares governance with the
+                        investor community</p>
+                    <a class="btn btn-outline-primary btn-lg animonItem" data-delay="500" href="#about">EXPLORE</a>
                 </div>
             </div>
         </div>
     </header>
+
+    <!-- Slogan-->
+    <div class="col-md-6 offset-md-3 pb-4 text-center">
+        <h1 class="text-primary animonItem" data-effect="fadeInUp">Maximize your total wealth</h1>
+    </div>
+
     <!-- About-->
     <section class="page-section" id="about">
         <div class="container px-4 px-lg-5">
@@ -180,58 +202,158 @@
                         data-mouse-force="10" data-layer-count="3" data-depth="4" data-add-timestamp="true"
                         src="assets/img/fundi-finance-white.png" alt="">
                 </div>
-                <div class="col-lg-8 text-center">
+                <div class="col-lg-8 text-center animonItem" data-effect="fadeInUp" data-delay="100">
                     <h2 class="text-primary my-4 mt-0">What is Fundi Finance?</h2>
-                    <h4 class="text-white mb-4 my-4">Fundi Finance is a digital protocol exploring the boundaries of
-                        utility use cases for digital assets, whilst providing liquidity pools for investors through
-                        decentralised finance.
-                    </h4>
-                    <div class="col-sm-2 mx-auto" width="56px"><a href="#services">
+                    <hr class="divider" />
+                    <h5 class="text-white mb-4 my-4">Fundi Finance is a yield generating hybrid for digital assets /
+                        security tokens / NFT’s,
+                        with services to tokenise physical assets into digital liquidity. Fundi boasts of being an
+                        advanced decentralised
+                        autonomous organisation governed by and built for its investing community. The DAO provides
+                        users true total control
+                        over their entire self-worth for the first time ever!
+                    </h5>
+                    <a class="btn btn-outline-primary text-white mb-4 my-4" target="_blank" href="empty">Download our
+                        ecosystem flowchart <i class="fa fa-file-pdf"></i></a>
+
+                    <div class="row my-5 animonItem" data-effect="fadeInUp" data-delay="200">
+                        <h2 class="text-primary">Vision</h2>
+                        <hr class="divider" />
+                        <h5 class="text-white mb-4 my-4">Fundi Finance provides a decentralised investor-controlled
+                            governance system
+                            that is powered by a truly digital multi-layered asset-commerce ecosystem to brigde
+                            decentralised and
+                            centralised finance under one hybrid financial hub to leverage the future of real world
+                            assets.
+                        </h5>
+                    </div>
+                    <!-- <div class="col-sm-2 mx-auto" width="56px"><a href="#services">
                             <lottie-player src="js/lottie/scroll-down.json" style="width: 3rem;" background="
                                 transparent" speed="1" loop autoplay>
                             </lottie-player>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio-->
+    <section class="page-section text-white" id="portfolio">
+        <div id="portfolio">
+            <h2 class="text-center text-primary mt-0">Problems solved by Fundi Finance</h2>
+            <hr class="divider" />
+            <div class="container-fluid p-0">
+                <div class="row g-0">
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/PS1.jpg" title="Fundi Finance">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/PS1thumb.jpg" alt="..." />
+                            <div class="portfolio-box-caption borderps">
+                                <div class="project-category text-white-50">Long time lock of assets</div>
+                                <div class="project-name">Fundi eases use and borrow</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/PS2.jpg" title="Fundi Finance">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/PS2thumb.jpg" alt="..." />
+                            <div class="portfolio-box-caption borderps">
+                                <div class="project-category text-white-50">Average citizen unable to participate</div>
+                                <div class="project-name">Fundi include everyday people</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/PS3.jpg" title="Fundi Finance">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/PS3thumb.jpg" alt="..." />
+                            <div class="portfolio-box-caption borderps">
+                                <div class="project-category text-white-50">Retail is denied to access large projects
+                                </div>
+                                <div class="project-name">Fundi opens doors for retail investors</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/PS4.jpg" title="Fundi Finance">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/PS4thumb.jpg" alt="..." />
+                            <div class="portfolio-box-caption borderps">
+                                <div class="project-category text-white-50">Commercial projects limited to selected
+                                    investors</div>
+                                <div class="project-name">Fundi enables allcommerical investors</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/PS5.jpg" title="Fundi Finance">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/PS5thumb.jpg" alt="..." />
+                            <div class="portfolio-box-caption borderps">
+                                <div class="project-category text-white-50">Gaining liquidity leads to loss of ownership
+                                </div>
+                                <div class="project-name">Fundi enables retain of ownership</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-4 col-sm-6">
+                        <a class="portfolio-box" href="assets/img/portfolio/fullsize/PS6.jpg" title="Fundi Finance">
+                            <img class="img-fluid" src="assets/img/portfolio/thumbnails/PS6thumb.jpg" alt="..." />
+                            <div class="portfolio-box-caption p-3 borderps">
+                                <div class="project-category text-white-50">Fiat is limited</div>
+                                <div class="project-name">Fundi uses blockchain and smart contracts for scalability
+                                </div>
+                            </div>
                         </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- SLOGAN-->
+    <div class="col-md-8 offset-md-2 my-4">
+        <h1 class="text-primary text-center mt-0 animonItem" data-effect="fadeInUp">Worlds first AMM for security
+            tokens/ NFT's/digital and physical assets
+        </h1>
+    </div>
+
     <!-- Call to action-->
     <section class="page-section text-white" id="services">
-        <div class="container py-5 px-4 px-lg-5 text-center">
+        <div class="container py-5 px-4 px-lg-5 animonItem" data-effect="fadeInUp">
             <div class="row align-items-center justify-content-center">
-                <h2 class="text-primary mt-0">FUNDI FINANCES KEY POINTS
-                </h2>
-                <h4 class="col-sm-8 text-white-75 mb-4">Open-source crowd funding into exciting new areas for digital
-                    asset
-                    utility, such as Real Estate, Renewable energy, Natural Resources, Farming, and agriculture.​
-                </h4>
+                <h2 class="text-primary mt-0  text-center">Key points of Fundi Finance</h2>
+                <hr class="divider" />
             </div>
-            <div class="row d-flex py-4 d-flex justify-content-center">
+            <div class="row d-flex py-4 d-flex justify-content-center animonItem" data-effect="fadeInUp">
                 <div class="col-md-4">
                     <ul class="list-display list-checkmarks">
                         <li>AMM Yield Farming</li>
                         <li>Total Transparency</li>
                         <li>Community Governance</li>
-                        <li>Open Voting</li>
+                        <li>Fractional Ownership</li>
+                        <li>Synthetic Tokens</li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-display list-checkmarks">
-                        <li>Open Treasury</li>
+                        <li>Open Voting & Open Treasury</li>
                         <li>Liquidity Pools</li>
                         <li>Lending And Borrowing</li>
                         <li>An Exchange For Digital Assets</li>
+                        <li>Security Tokens</li>
                     </ul>
                 </div>
             </div>
         </div>
         </div>
     </section>
-    <!-- GOBERNANCE-->
+
+    <!-- SLOGAN-->
+    <div class="col-lg-13 text-center">
+        <h1 class="text-primary my-4 mt-0 animonItem" data-effect="fadeInUp">100% investor governed protocol</h1>
+    </div>
+
+    <!-- GOVERNANCE-->
     <section class="page-section" id="gobernance">
         <div class="container px-4 px-lg-5 justify-content-center">
-            <h2 class="text-center text-primary mt-0">GOVERNANCE</h2>
+            <h2 class="text-center text-primary mt-0">Governance</h2>
             <hr class="divider" />
             <div class="col-md-8 mx-auto justify-content-center">
                 <lottie-player src="js/lottie/gobernance.json" background="transparent" speed="1" loop autoplay>
@@ -239,24 +361,262 @@
             </div>
         </div>
     </section>
+
+    <!-- SLOGAN-->
+    <div class="col-lg-12 text-center">
+        <h1 class="text-primary my-4 mt-0 animonItem" data-effect="fadeInUp">Collateral backed loans of digital and
+            physical assets</h1>
+    </div>
+
+    <!-- Tokens-->
+    <section class="page-section text-white" id="Token">
+        <div class="container animonItem" data-effect="fadeInUp">
+            <div class="row align-items-center justify-content-center">
+                <h2 class="text-primary mt-0 text-center">Fundi Finance Tokens</h2>
+                <hr class="divider" />
+            </div>
+            <div class="card-deck row d-flex py-4 d-flex justify-content-center">
+                <div class="col-md-4 card bg-dark border-secondary animonItem" data-effect="fadeInUp">
+                    <div class="mb-2 text-center"><i class="bi-gem fs-1 text-primary"></i></div>
+                    <h3 class="text-primary mt-0 text-center">FF Token</h3>
+                    <ul class="list-display list-checkmarks">
+                        <li>Fundi Token (FF), is Fundi Finances governance token. Its purpose will be
+                            to represent governing power within the protocol. This will be achieved by giving holders of
+                            FF
+                            token VOTING POWER on every decision and treasury action.</li>
+                        <li>Supply: 80,000 (fixed!)</li>
+                        <li>Utilization: Governance Token</li>
+                        <li>KYC: No</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 card bg-dark border-secondary animonItem" data-effect="fadeInUp" data-delay="100">
+                    <div class="mb-2 text-center"><i class="bi-laptop fs-1 text-primary"></i></div>
+                    <h3 class="text-primary mt-0 text-center">CRA Token</h3>
+                    <ul class="list-display list-checkmarks">
+                        <li>Fundi Finance created CRA as a digital utility token. With Fundi protocol
+                            dealing in assets both digital and centralized finance a utility token was needed to achieve
+                            full
+                            liquidity. CRA token will be used as a digital bridge between projects and provide action in
+                            areas
+                            such as payments, fees, rewards, partnerships.</li>
+                        <li>Starting Supply: 150.000.000 (not fixed)</li>
+                        <li>Utilization: Digital Currency</li>
+                        <li>KYC: No</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 card bg-dark border-secondary animonItem" data-effect="fadeInUp" data-delay="200">
+                    <div class="mb-2 text-center"><i class="bi-globe fs-1 text-primary"></i></div>
+                    <h3 class="text-primary text-center mt-0 text-center">FFST Token</h3>
+                    <ul class="list-display list-checkmarks">
+                        <li>FFST Token token (planned launch see roadmap) will give a passive
+                            income later in the protocol with rewards paid to holders and liquidity providers of FF
+                            token.
+                            Rewards will be generated from a clever tax system generated from use of Fundi Finances
+                            DeFi,
+                            CeFi and ReFi services.</li>
+                        <li>Supply: 190,000 (fixed)</li>
+                        <li>Utilization: Governance Token</li>
+                        <li>KYC: Yes</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+    <!-- SLOGAN-->
+    <div class="col-md-8 offset-md-2 my-4">
+        <h1 class="text-primary text-center mt-0 animonItem" data-effect="fadeInUp">
+            Colleterial backed loans of digital and physical assets</h1>
+    </div>
+
+    <!-- ROADMAP -->
+
+    <!-- Call to action-->
+    <section class="page-section text-white" id="roadmap">
+        <div class="container py-5 px-4 px-lg-5">
+            <div class="row align-items-center justify-content-center text-center">
+                <h2 class="text-primary mt-0">Roadmap</h2>
+                <hr class="divider" />
+            </div>
+            <!-- <div class="row d-flex py-4 d-flex justify-content-center">
+                <div class="col-md-4">
+                    <h3 class="text-primary mt-0">Q4/2021</h3>
+                    <ul class="list-display list-checkmarks">
+                        <li>Set proposals and vote to first venture project</li>
+                        <li>IDO</li>
+                        <li>Staking pools</li> 
+                        <li>Yearly report</li>
+                        <li>NFT vaults</li>
+                        <li>Start Dex Design</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-primary mt-0">Q1/2022</h3>
+                    <ul class="list-display list-checkmarks">
+                        <li>Increase DeFI Pools</li>
+                        <li>Start building launchpad for ReFi</li>
+                        <li>Increase marketing campaign for FFST</li>
+                        <li>Create FFST token contract</li>
+                        <li>Seed sale FFST token</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="text-primary mt-0">Q2/2022</h3>
+                    <ul class="list-display list-checkmarks">
+                        <li>Fractional ownership integration</li>
+                        <li>Synthetic tokens integration</li>
+                        <li>ISO for FFST</li>
+                        <li>Launch FFST</li>
+                    </ul>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="timeline-steps aos-init aos-animate" data-aos="fade-up">
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2003">
+                                    <div class="inner-circle"></div>
+                                    <h4 class="text-primary">Q4/2021
+                                    </h4>
+                                    <ul class="list-display list-checkmarks text-white">
+                                        <li>Set proposals and vote to first venture project</li>
+                                        <li>IDO</li>
+                                        <li>Staking pools</li>
+                                        <li>Yearly report</li>
+                                        <li>NFT vaults</li>
+                                        <li>Start Dex Design</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2004">
+                                    <div class="inner-circle"></div>
+                                    <h4 class="text-primary">Q1/2022
+                                    </h4>
+                                    <ul class="list-display list-checkmarks text-white">
+                                        <li>Increase DeFI Pools</li>
+                                        <li>Start building launchpad for ReFi</li>
+                                        <li>Increase marketing campaign for FFST</li>
+                                        <li>Create FFST token contract</li>
+                                        <li>Seed sale FFST token</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="timeline-step">
+                                <div class="timeline-content" data-toggle="popover" data-trigger="hover"
+                                    data-placement="top" title=""
+                                    data-content="And here's some amazing content. It's very engaging. Right?"
+                                    data-original-title="2005">
+                                    <div class="inner-circle"></div>
+                                    <h4 class="text-primary">Q2/2022</h4>
+                                    <ul class="list-display list-checkmarks text-white">
+                                        <li>Fractional ownership integration</li>
+                                        <li>Synthetic tokens integration</li>
+                                        <li>ISO for FFST</li>
+                                        <li>Launch FFST</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- SLOGAN-->
+    <div class="container">
+        <div class="row col-lg-13 text-center">
+            <h1 class="text-primary my-4 mt-0 animonItem" data-effect="fadeInUp">Fundi Finance, your key to unlock liquidity from your equity.
+                Tokenise your physical assets and make them work for you.</h1>
+        </div>
+    </div>
+
     <!-- Wallets-->
     <section class="page-section" id="wallets">
         <div class="container">
             <div class="row justify-content-center align-items-center text-center">
                 <div class="col-md-3">
-                    <a target="_blank"
-                        href="https://testnet.bscscan.com/tx/0x1a0ccfd030c49ca6aa4cdda121dcc18831fac923ccafd97aa7b6e5b79563b117"><img
-                            class="p-4" width="220px" src="assets/img/wallets/metamask-fox-wordmark-horizontal.svg"
-                            alt=""></a>
+                    <a target="_blank" href="https://www.rdauditors.com/"><img class="p-4" width="210px"
+                            src="assets/img/portfolio/thumbnails/rdauditors.png" alt="RD Auditors"></a>
                 </div>
                 <div class="col-md-3">
-                    <a target="_blank" href="https://www.binance.com/es/download"><img class="p-4"
-                            src="assets/img//wallets/binance-logo-hor.svg" width="220px" alt=""></a>
+                    <a target="_blank" href="https://www.binance.com"><img class="p-4"
+                            src="assets/img//wallets/binance-logo-hor.svg" width="220px" alt="Binance Smart Chain"></a>
                 </div>
                 <div class="col-md-3">
-                    <a target="_blank" href="https://walletconnect.org/"> <img class="p-4"
-                            src="assets/img//wallets/wallet-connect-hor.svg" width="220px" alt=""></a>
+                    <a target="_blank" href="https://mglaw.ge"> <img class="p-4"
+                            src="assets/img/portfolio/thumbnails/mglaw.png" width="145px" alt="MG Law"></a>
                 </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- SLOGAN-->
+        <div class="container">
+            <div class="row col-lg-12 text-center animonItem" data-effect="fadeInUp">
+                <h1 class="text-primary my-4 mt-0">THE FUNDI TEAM</h1>
+                <h2 class="text-primary">DOXXED – SECURED – TRUSTED</h2>
+            </div>
+        </div>
+
+    <!-- the team-->
+    <section class="page-section" id="team">
+        <div class="container">
+            <div class="row card-deck animonItem justify-content-center align-items-center" data-effect="fadeInUp" data-delay="100">
+                <div class="card bg-transparent col-md-3 m-2 text-center animonItem" data-effect="fadeInUp">
+                    <img class="card-img-top rounded-circle" src="/assets/img/team/Des-Prout.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Des Prout</h5>
+                        <p class="card-text text-white">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="card bg-transparent col-md-3 m-2 text-center  animonItem" data-effect="fadeInUp">
+                    <img class="card-img-top rounded-circle" src="/assets/img/team/Steven-Machin.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Steven Machin</h5>
+                        <p class="card-text text-white">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="card bg-transparent col-md-3 m-2 text-center  animonItem" data-effect="fadeInUp">
+                    <img class="card-img-top rounded-circle" src="/assets/img/team/Aaron-Lee.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Aaron Lee</h5>
+                        <p class="card-text text-white">Co-Founder</p>
+                    </div>
+                </div>                
+            </div>
+            <div class="row card-deck animonItem justify-content-center align-items-center" data-effect="fadeInUp" data-delay="100">
+                <div class="card bg-transparent col-md-3 m-2 text-center animonItem" data-effect="fadeInUp">
+                    <img class="card-img-top rounded-circle" src="/assets/img/team/Kakha-Tatelishvili.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Kakha Tatelishvili</h5>
+                        <p class="card-text text-white">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="card bg-transparent col-md-3 m-2 text-center  animonItem" data-effect="fadeInUp">
+                    <img class="card-img-top rounded-circle" src="/assets/img/team/Nathaniel-Parnell-removebg-preview.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Nathaniel Parnell</h5>
+                        <p class="card-text text-white">Co-Founder</p>
+                    </div>
+                </div>
+                <div class="card bg-transparent col-md-3 m-2 text-center  animonItem" data-effect="fadeInUp">
+                    <img class="card-img-top rounded-circle" src="/assets/img/team/Chetan_Pujara.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">Chetan Pujara</h5>
+                        <p class="card-text text-white">Co-Founder</p>
+                    </div>
+                </div>                
             </div>
         </div>
     </section>
@@ -271,12 +631,14 @@
                         class="fab fa-twitter"></i></a>
                 <a class="social-icon" target="_blank" href="https://fundifinance.medium.com/"><i
                         class="fab fa-medium"></i></a>
-                <a class="social-icon" target="_blank" href="https://discord.gg/hxYr4SJA"><i
+                <a class="social-icon" target="_blank" href="https://discord.gg/sr8EJP5hhF"><i
                         class="fab fa-discord"></i></a>
                 <a class="social-icon" target="_blank" href="https://t.me/FundiFinance"><i
                         class="fab fa-telegram"></i></a>
                 <a class="social-icon" target="_blank" href="https://github.com/FundiFinance"><i
                         class="fab fa-github"></i></a>
+                <a class="social-icon" target="_blank" href="https://www.tiktok.com/@fundifinance?"><i
+                        class="fab fa-tiktok"></i></a>
             </div>
 
             <div class="small text-center text-muted">Copyright &copy; 2021 - Fundi Finance</div>
@@ -299,6 +661,10 @@
 
     <!-- ***SIDEBAR MENU*** -->
     <script src="js/sidenav.js"></script>
+
+    <script type="text/javascript">
+        Animon.animon();
+    </script>
 </body>
 
 </html>
