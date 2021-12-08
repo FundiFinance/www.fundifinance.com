@@ -3949,8 +3949,8 @@ fieldset:disabled .btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 3.5rem;
-  width: 3.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
   background-color: transparent;
   color: #fff;
   border-radius: 100%;
@@ -4963,7 +4963,7 @@ fieldset:disabled .btn {
   */
 #menuToggle input:checked ~ ul {
   transform: none;
-  width: 300px;
+  width: 340px;
   opacity: 1;
 }
 
