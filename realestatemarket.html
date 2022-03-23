@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fundi Finance" />
+    <meta name="description" content="decentralised finance protocol" />
+    <link rel="stylesheet" type="text/css" href="css/rem-style.css">
+    <title>Fundi Finance Real Estate</title>
+     <!-- Favicon-->
+     <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/favicon.ico">
+     <link rel="apple-touch-icon" sizes="60x60" href="assets/favicon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="assets/favicon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="assets/favicon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="assets/favicon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="assets/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="assets/favicon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="assets/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+     <link rel="manifest" href="assets/favicon/manifest.json">
+     <meta name="msapplication-TileColor" content="#121212">
+     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
+     <meta name="theme-color" content="#121212">
+    <!-- Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Dongle&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome icons -->
+    <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Animaciones Scroll-->
+    <script src="js/rem-script.js"></script>
+
+</head>
+
+<!--Body ---------- --> 
+<body>
+
+    <!-- Header -->
+    <header>
+
+        <!--NavBarr-->
+        <nav id="navBar">
+            <div class="logo">
+               <a href="https://fundifinance.com"><img src="img/FF-logo-xs.png" width="100px" alt="brand"></a> 
+            </div>
+            <div class="contenedor">
+ <!-- SIDEBAR -->
+ <div class="nav-container" id="menuToggle">
+    <!--
+A fake / hidden checkbox is used as click reciever,
+so you can use the :checked selector on it.
+-->
+    <input type="checkbox" />
+
+    <!--Some spans to act as a hamburger.
+
+They are acting like a real hamburger,
+not that McDonalds stuff.-->
+    <span></span>
+    <span></span>
+    <span></span>
+    <!--
+Too bad the menu has to be inside of the button
+but hey, it's pure CSS magic.
+-->
+    <ul id="menu" class="nav-toggle text-center">
+        <a class="btn" href="index.html">
+            <li>Home</li>
+        </a>
+        <a class="btn" target="_blank" href="https://vote.fundifinance.com">
+            <li>Voting</li>
+        </a>
+        <a class="btn" href="realestatemarket.html">
+            <li>Real Estate</li>
+        </a>
+        <a class="btn" target="_blank" href="https://fundi-finance-1.gitbook.io/fundi-finance">
+            <li>Docs</li>
+        </a>
+        <!-- <a target="_blank" href="#!">
+            <li>Disclaimer</li>
+        </a> -->
+        <div class="buttons">
+        <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2" href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d">
+            FF on BSCScan
+        </a></div>
+        <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2"  href="https://bscscan.com/token/0xd6368dfd288a3d9ac769889c0ddfa7d0e20d5c29">
+            CRA on BSCScan
+        </a></div>
+    </div>
+        <hr>
+        <div>
+            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/exchange/BUSD-FF?network=bsc-mainnet" role="button">Buy FF</a>
+            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/liquidity?poolAddress=0x78f3c868b1cdeb37c256f30c65730f1c06fa5e76&network=bsc" role="button">Create FF LP</a>
+        </div>
+        <hr>
+        <div>
+            <!-- <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xaa08b5d4669f49cc007c80471d86f916ed9467c7" role="button">FF Single Staking</a> -->
+            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xea138ba58243851b2e73c35488f2407b3bf20e90" role="button">FF LP Staking</a>
+        </div>
+        <hr>
+            <div class="small text-center text-muted my-2"><a class="btn btn-link"
+                    href="mailto:founder@fundifinance.com">founder@fundifinance.com</a></div>
+            <!-- Add font awesome icons -->
+            <div class="grid">
+                <a target="_blank" href="https://discord.gg/sr8EJP5hhF">
+                    <i class="social_icon fab fa-discord"></i>
+                </a>
+                <a target="_blank" href="https://github.com/FundiFinance">
+
+                <a target="_blank" href="http://www.google.com/">
+                    <i class="social_icon fab fa-github"></i>
+                </a>
+                
+                <a target="_blank" href="https://fundifinance.medium.com/">
+                    <i class="social_icon fab fa-medium"></i>
+                </a>
+               
+                <a target="_blank" href="https://www.tiktok.com/@fundifinance?">
+                    <i class="social_icon fab fa-tiktok"></i>
+                </a>
+               
+                <a target="_blank" href="https://twitter.com/FundiFinance">
+                    <i class="social_icon fab fa-twitter"></i>
+                </a>
+               
+                <a target="_blank" href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg">
+                    <i class="social_icon fab fa-youtube"></i>
+                </a>
+
+                <a target="_blank" href="https://t.me/FundiFinance">
+                    <i class="social_icon fab fa-telegram"></i>
+                </a>
+            </div>
+    </ul>
+</div>
+        </nav>
+        
+        <div id="headerSlider">          
+            <div class="Slider">
+                <video class="video_bg" autoplay muted loop >
+                    <source src="img/video/header_bg.mp4" type="video/mp4">
+                </video>              
+            </div>
+            <div class="headerTitle">
+                <h1>Become the landlord of the future</h1>
+            </div>
+            <div class="headerSliderTitle">
+                
+                <h3>Real Estate powered by blockchain</h3>
+                <p>Fundi Finance opens the door to retail investors across the globe, invest in global real
+                    estate projects, with fully compliant tokenization system. Safe investments backed by
+                    tangible assets, generate high yield returns choice your properties now
+                </p>
+                <a href="#section1">View more</a>
+
+            </div>
+            
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Section 1 -->
+    <section id="section1">
+        <div id="contenedor_title">
+            <h2 class="title">Our Listing</h2>
+            <hr class="divider">
+        </div>
+        <div class="grid">
+            <div class="item">
+                <div class="row">
+                    <div class="column">
+                    
+                        <div class="status_text">
+                            <h4 class="stat_title">Sold out</h4>
+                        </div>
+                    
+                        <div class="img_and_price">
+                            <div class="post_img">
+                                <img src="img/img_grid_home.png" width="100%" alt="item_grid">
+                            </div>
+                            <div class="price">
+                                <a>$197,123</a>
+                            </div>
+                        </div>
+                    
+                        <div class="data">
+                            <h3 class="title">Collectible note raise NFT</h3>
+                            <div class="location">
+                                <div class="icon_and_title">
+                                     <img src="img/map_marker.png" alt="location_icon">
+                                    <h4>9466 Juanita Course</h4>
+                                </div>
+                                <div class="location_city">
+                                    <a>Bedtordsnire</a>
+                                </div>
+                            </div>
+                            
+                            <div class="graphics">
+                                <div class="data_income">
+                                    <img src="img/chart-line.png" alt="income_icon">
+                                    <small>Expented Income <spam>8.8%</spam></small>
+                                    
+                                </div>
+                        
+                                <div class="data_token">
+                                    <img src="img/icon.svg" alt="token_icon">
+                                    <small>Rent per Token <spam>8.8%</spam></small>
+                                    
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="column">
+                    
+                        <div class="status_text">
+                            <h4 class="stat_title">Sold out</h4>
+                        </div>
+                    
+                        <div class="img_and_price">
+                            <div class="post_img">
+                                <img src="img/img_grid_home.png" width="100%" alt="item_grid">
+                            </div>
+                            <div class="price">
+                                <a>$197,123</a>
+                            </div>
+                        </div>
+                    
+                        <div class="data">
+                            <h3 class="title">Collectible note raise NFT</h3>
+                            <div class="location">
+                                <div class="icon_and_title">
+                                    <img src="img/map_marker.png" alt="location_icon">
+                                    <h4>9466 Juanita Course</h4>
+                                </div>
+                                <div class="location_city">
+                                    <a>Bedtordsnire</a>
+                                </div>
+                            </div>
+                            
+                            <div class="graphics">
+                                <div class="data_income">
+                                    <img src="img/chart-line.png" alt="income_icon">
+                                    <small>Expented Income <spam>8.8%</spam></small>
+                                    
+                                </div>
+                        
+                                <div class="data_token">
+                                    <img src="img/icon.svg" alt="token_icon">
+                                    <small>Rent per Token <spam>8.8%</spam></small>
+                                    
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="column">
+                    
+                        <div class="status_text">
+                            <h4 class="stat_title">Sold out</h4>
+                        </div>
+                    
+                        <div class="img_and_price">
+                            <div class="post_img">
+                                <a href="property.html">
+                                    <img src="img/grid_img/3.jpg" width="100%" alt="item_grid">
+                                </a>
+
+                            </div>
+                            <div class="price">
+                                <a>$197,123</a>
+                            </div>
+                        </div>
+                    
+                        <div class="data">
+                            <h3 class="title">Collectible note raise NFT</h3>
+                            <div class="location">
+                                <div class="icon_and_title">
+                                    <img src="img/map_marker.png" alt="location_icon">
+                                    <h4>9466 Juanita Course</h4>
+                                </div>
+                                <div class="location_city">
+                                    <a>Bedtordsnire</a>
+                                </div>
+                            </div>
+                            
+                            <div class="graphics">
+                                <div class="data_income">
+                                    <img src="img/chart-line.png" alt="income_icon">
+                                    <small>Expented Income <spam>8.8%</spam></small>
+                                    
+                                </div>
+                        
+                                <div class="data_token">
+                                    <img src="img/icon.svg" alt="token_icon">
+                                    <small>Rent per Token <spam>8.8%</spam></small>
+                                    
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="column">
+                    
+                        <div class="status_text">
+                            <h4 class="stat_title">Sold out</h4>
+                        </div>
+                    
+                        <div class="img_and_price">
+                            <div class="post_img">
+                                <a href="property.html">
+                                    <img src="img/grid_img/4.jpg" width="100%" alt="item_grid">
+                                </a>
+
+                            </div>
+                            <div class="price">
+                                <a>$197,123</a>
+                            </div>
+                        </div>
+                    
+                        <div class="data">
+                            <h3 class="title">Collectible note raise NFT</h3>
+                            <div class="location">
+                                <div class="icon_and_title">
+                                    <img src="img/map_marker.png" alt="location_icon">
+                                    <h4>9466 Juanita Course</h4>
+                                </div>
+                                <div class="location_city">
+                                    <a>Bedtordsnire</a>
+                                </div>
+                            </div>
+                            
+                            <div class="graphics">
+                                <div class="data_income">
+                                    <img src="img/chart-line.png" alt="income_icon">
+                                    <small>Expented Income <spam>8.8%</spam></small>
+                                    
+                                </div>
+                        
+                                <div class="data_token">
+                                    <img src="img/icon.svg" alt="token_icon">
+                                    <small>Rent per Token <spam>8.8%</spam></small>
+                                    
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="column">
+                    
+                        <div class="status_text">
+                            <h4 class="stat_title">Sold out</h4>
+                        </div>
+                    
+                        <div class="img_and_price">
+                            <div class="post_img">
+                                <a href="property.html">
+                                    <img src="img/grid_img/1.jpg" width="100%" alt="item_grid">
+                                </a>
+
+                            </div>
+                            <div class="price">
+                                <a>$197,123</a>
+                            </div>
+                        </div>
+                    
+                        <div class="data">
+                            <h3 class="title">Collectible note raise NFT</h3>
+                            <div class="location">
+                                <div class="icon_and_title">
+                                    <img src="img/map_marker.png" alt="location_icon">
+                                    <h4>9466 Juanita Course</h4>
+                                </div>
+                                <div class="location_city">
+                                    <a>Bedtordsnire</a>
+                                </div>
+                            </div>
+                            
+                            <div class="graphics">
+                                <div class="data_income">
+                                    <img src="img/chart-line.png" alt="income_icon">
+                                    <small>Expented Income <spam>8.8%</spam></small>
+                                    
+                                </div>
+                        
+                                <div class="data_token">
+                                    <img src="img/icon.svg" alt="token_icon">
+                                    <small>Rent per Token <spam>8.8%</spam></small>
+                                    
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="column">
+                    
+                        <div class="status_text">
+                            <h4 class="stat_title">Sold out</h4>
+                        </div>
+                    
+                        <div class="img_and_price">
+                            <div class="post_img">
+                                <img src="img/img_grid_home.png" width="100%" alt="item_grid">
+                            </div>
+                            <div class="price">
+                                <a>$197,123</a>
+                            </div>
+                        </div>
+                    
+                        <div class="data">
+                            <h3 class="title">Collectible note raise NFT</h3>
+                            <div class="location">
+                                <div class="icon_and_title">
+                                    <img src="img/map_marker.png" alt="location_icon">
+                                    <h4>9466 Juanita Course</h4>
+                                </div>
+                                <div class="location_city">
+                                    <a>Bedtordsnire</a>
+                                </div>
+                            </div>
+                            
+                            <div class="graphics">
+                                <div class="data_income">
+                                    <img src="img/chart-line.png" alt="income_icon">
+                                    <small>Expented Income <spam>8.8%</spam></small>
+                                    
+                                </div>
+                        
+                                <div class="data_token">
+                                    <img src="img/icon.svg" alt="token_icon">
+                                    <small>Rent per Token <spam>8.8%</spam></small>
+                                    
+                                </div>
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section 1 End -->
+
+    <!-- Section 2 -->
+    <section id="section2">
+        <div class="contenedor_title">
+            <h1>FUNDI FINANCE THE FUTURE OF</br> REAL ESTATE INVESTING</h1>
+        </div>
+        <div id="grid_section2">     
+           <div class="item">
+                <img class="icon" src="img/icon.svg"  alt="icon">
+                <h3>Vetted Real State Projects</h3>
+                <p>Real estate projects offered on the Fundi Finance platform have been
+                   reviewed two times. KYC is mandatory for real estate projects: each 
+                   is reviewed internally and externally. 
+                </p>
+            </div>
+            <div class="item">
+                <img class="icon" src="img/icon.svg" alt="icon">
+                <h3>Efficient Transaction Costs</h3>
+                <p>Investing in real estate on the Fundi Finance platform is highly efficient 
+                    a transaction cost is $0.14c on the Binance Smart Chain network. 
+                </p>
+            </div>
+            
+            <div class="item">
+                <img class="icon" src="img/icon.svg" alt="icon">
+                <h3>Invest in real estate projects</h3>
+                <p>Fundi platform offers investors numerous investment options into tokenised 
+                    real estate projects. Invest in a real
+                    estate proyect and receive a yield income. It's that easy. 
+                </p>
+                
+            </div>
+            <div class="item"> 
+                <img class="icon" src="img/icon.svg" alt="icon">
+                <h3>Evolving Collateral</h3>
+                <p>Fundi Finance system is designed to proytect investors funds at all times. 
+                    Each projects assets is always collaterised to its investors.        
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Section 2 End -->
+
+    <!--Footer  -->
+    <footer id="footer">
+        <div>
+            <div class="footer_title">
+                <a>founder@fundifinance.com</a>
+            </div>
+            <div class="footer_socials">
+                <div class="social_title">
+                    <h3>join the comunity</h3>
+                </div>
+                <div class="grid">
+                    <a target="_blank" href="https://discord.gg/sr8EJP5hhF">
+                        <i class="social_icon fab fa-discord"></i>
+                    </a>
+                   
+
+                    <a target="_blank" href="https://github.com/FundiFinance">
+
+                    <a target="_blank" href="http://www.google.com/">
+                        <i class="social_icon fab fa-github"></i>
+                    </a>
+                    
+                    <a target="_blank" href="https://fundifinance.medium.com/">
+                        <i class="social_icon fab fa-medium"></i>
+                    </a>
+                   
+                    <a target="_blank" href="https://www.tiktok.com/@fundifinance?">
+                        <i class="social_icon fab fa-tiktok"></i>
+                    </a>
+                   
+                    <a target="_blank" href="https://twitter.com/FundiFinance">
+                        <i class="social_icon fab fa-twitter"></i>
+                    </a>
+                   
+                    <a target="_blank" href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg">
+                        <i class="social_icon fab fa-youtube"></i>
+                    </a>
+
+                    <a target="_blank" href="https://t.me/FundiFinance">
+                        <i class="social_icon fab fa-telegram"></i>
+                    </a>
+                </div>
+                <div>
+                    <small>Copyright 2022 - Fundi Finance</small>
+                </div>
+            </div>
+
+        </div>
+
+    </footer>
+    <!--Footer End-->
+
+
+    
+</body>
+<!--Body End -->
+</html>
