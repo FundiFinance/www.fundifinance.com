@@ -5,7 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/property-style.css">
-    <title>FundiFinance</title>
+    <title>Fundi Finance Real Estate</title>
+     <!-- Favicon-->
+     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon.ico">
+     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+     <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+     <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+     <link rel="manifest" href="img/favicon/manifest.json">
+     <meta name="msapplication-TileColor" content="#121212">
+     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+     <meta name="theme-color" content="#121212">
+
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,6 +33,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Font Awesome icons -->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
     
     <!-- Animaciones Scroll-->
     <script src="js/rem-script.js"></script>
@@ -39,78 +61,111 @@
         <!--NavBarr-->
         <nav id="navBar">
             <div class="logo">
-                <img src="img/FF-logo-xs.png" width="100px" alt="brand">
+             <a href="index.html"><img src="img/FF-logo-xs.png" width="100px" alt="brand"></a>   
             </div>
             <div class="contenedor">
-                <img onclick="showMenu();" src="img/menu_bars.png" whith="25px" height="25px">
+                <!-- SIDEBAR -->
+ <div class="nav-container" id="menuToggle">
+    <!--
+A fake / hidden checkbox is used as click reciever,
+so you can use the :checked selector on it.
+-->
+    <input type="checkbox" />
+
+    <!--Some spans to act as a hamburger.
+
+They are acting like a real hamburger,
+not that McDonalds stuff.-->
+    <span></span>
+    <span></span>
+    <span></span>
+    <!--
+Too bad the menu has to be inside of the button
+but hey, it's pure CSS magic.
+-->
+    <ul id="menu" class="nav-toggle text-center">
+        <a class="btn" href="index.html">
+            <li>Home</li>
+        </a>
+        <a class="btn" target="_blank" href="https://vote.fundifinance.com">
+            <li>Voting</li>
+        </a>
+        <a class="btn" href="realestatemarket.html">
+            <li>Real Estate</li>
+        </a>
+        <a class="btn" target="_blank" href="https://fundi-finance-1.gitbook.io/fundi-finance">
+            <li>Docs</li>
+        </a>
+        <!-- <a target="_blank" href="#!">
+            <li>Disclaimer</li>
+        </a> -->
+        <div class="buttons">
+        <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2" href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d">
+            FF on BSCScan
+        </a></div>
+        <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2"  href="https://bscscan.com/token/0xd6368dfd288a3d9ac769889c0ddfa7d0e20d5c29">
+            CRA on BSCScan
+        </a></div>
+    </div>
+        <hr>
+        <div>
+            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/exchange/BUSD-FF?network=bsc-mainnet" role="button">Buy FF</a>
+            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/liquidity?poolAddress=0x78f3c868b1cdeb37c256f30c65730f1c06fa5e76&network=bsc" role="button">Create FF LP</a>
+        </div>
+        <hr>
+        <div>
+            <!-- <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xaa08b5d4669f49cc007c80471d86f916ed9467c7" role="button">FF Single Staking</a> -->
+            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xea138ba58243851b2e73c35488f2407b3bf20e90" role="button">FF LP Staking</a>
+        </div>
+        <hr>
+            <div class="small text-center text-muted my-2"><a class="btn btn-link"
+                    href="mailto:founder@fundifinance.com">founder@fundifinance.com</a></div>
+            <!-- Add font awesome icons -->
+            <div class="grid">
+                <a target="_blank" href="https://discord.gg/sr8EJP5hhF">
+                    <i class="social_icon fab fa-discord"></i>
+                </a>
+                <a target="_blank" href="https://github.com/FundiFinance">
+
+                <a target="_blank" href="http://www.google.com/">
+                    <i class="social_icon fab fa-github"></i>
+                </a>
+                
+                <a target="_blank" href="https://fundifinance.medium.com/">
+                    <i class="social_icon fab fa-medium"></i>
+                </a>
+               
+                <a target="_blank" href="https://www.tiktok.com/@fundifinance?">
+                    <i class="social_icon fab fa-tiktok"></i>
+                </a>
+               
+                <a target="_blank" href="https://twitter.com/FundiFinance">
+                    <i class="social_icon fab fa-twitter"></i>
+                </a>
+               
+                <a target="_blank" href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg">
+                    <i class="social_icon fab fa-youtube"></i>
+                </a>
+
+                <a target="_blank" href="https://t.me/FundiFinance">
+                    <i class="social_icon fab fa-telegram"></i>
+                </a>
+            </div>
+    </ul>
+</div>
             </div>
 
-            <!-- MENU FLOAT -->
-            <div id="menu">
-                <div class="menu_container">
-                    <div class="closeBtn"><button onclick="hideMenu();">X</button></div>
-                    <div class="title1"><a href="/index.html">Home</a></div>
-                    <div class="title1"><a href="https://vote.fundifinance.com/">Voting</a></div>
-                    <div class="title1"><a href="https://fundi-finance-1.gitbook.io/fundi-finance">Docs</a></div>
-                    <div class="button1"><button ><a href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d">FFonBSCScan</a></button></div>
-                    <div class="button1"><button><a href="https://bscscan.com/token/0xd6368dfd288a3d9ac769889c0ddfa7d0e20d5c29">CRAonBSCScan</a></button></div>
-                    <div class="button2-h">
-                        <button><a href="https://app.dodoex.io/exchange/BUSD-FF?network=bsc-mainnet">Buy FF</a></button>
-                        <button><a href="https://app.dodoex.io/liquidity?poolAddress=0x78f3c868b1cdeb37c256f30c65730f1c06fa5e76&network=bsc">Create FF LP</a></button>
-                    </div>
-                    <div class="button2-v"><button><a href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xea138ba58243851b2e73c35488f2407b3bf20e90">FF LP Staking</a></button></div>
-                    <div><a href="mailto:founder@fundifinance.com">founder@fundifinace.com</a></div>
-                    <div class="socials">
-                    
-                        <a target="_blank" href="https://discord.gg/sr8EJP5hhF">
-                            <img class="social_icon" src="img/socials/discord.png" alt="Discord" >
-                        </a>
-                       
-                        <a target="_blank" href="http://www.google.com/">
-                            <img class="social_icon" src="img/socials/github.png" alt="github">
-                        </a>
-                        
-                        <a target="_blank" href="https://fundifinance.medium.com/">
-                            <img class="social_icon" src="img/socials/medium.png" alt="Medium">
-                        </a>
-                       
-                        <a target="_blank" href="https://www.tiktok.com/@fundifinance?">
-                            <img class="social_icon" src="img/socials/tiktok.png" alt="tiktok">
-                        </a>
-                       
-                        <a target="_blank" href="https://twitter.com/FundiFinance">
-                            <img class="social_icon" src="img/socials/twitter.png" alt="twitter">
-                        </a>
-                       
-                        <a target="_blank" href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg">
-                            <img class="social_icon" src="img/socials/youtube.png" alt="youtube">
-                        </a>
-    
-                        <a target="_blank" href="https://t.me/FundiFinance">
-                            <img class="social_icon" src="img/socials/telegram.png" alt="telegram">
-                        </a>
-                                        
-                    </div>
-
-                </div>
-
-            </div>
-            <!-- end menu-->
+           
         </nav>
         
         <div id="headerSlider">
-           
-            
             <div class="Slider">
-
                 <img class="image_bg" src="img/property_header.png" >
                               
             </div>
             <div class="headerTitle">
                 <h1>Property Title</h1>
-            </div>
             <div class="headerData">
-
                 <div class="dataIncome">
                     <div class="imagen">
                         <img src="img/chart-line-white.png" width="25px" height="25px">
@@ -136,6 +191,18 @@
                 </div>
 
             </div>
+        </div>
+
+            <!-- BreadCrumb -->
+            <div id="bread">
+                <ul class="breadcrumb">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="property.html">Marketplace</a></li>
+                    <li><a href="property.html">Rent Start Date</a></li>    
+                </ul>
+            </div>
+
+
             
         </div>
     </header>
@@ -148,11 +215,13 @@
                 <h3>10030 Cadieux Rd, Detroit, MI 48224</h3>
             </div>
             <div class="contracts_title">
-                <h3>View Smart Contracts</h3>
+                <h4>View Smart Contracts</h4>
             </div>
             <div class="btns">
-                <a href="#" class="bsc_btn">BSC</a>
-                <a href="#" class="sol_btn">SOL</a>
+                <a href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d" class="btn btn-primary my-2" id="bsc_btn">BSC</a>
+                
+                <!-- Modificar SOL -->
+                <a href="https://solscan.io/" class="btn btn-primary my-2" id="sol_btn">SOL</a>
             </div>
             
         </div>
@@ -160,22 +229,18 @@
             <!----------------------------------------------------------------------------->
             <div class="displayContainer">
                 <div id="wowslider-container1">
-                    <div class="ws_images">
-                        <ul>
-                            <li><img src="slider/data1/images/1.jpg" alt="1" title="1" id="wows1_0" /></li>
-                            <li><img src="slider/data1/images/2.jpg" alt="2" title="2" id="wows1_1" /></li>
-                            <li><img src="slider/data1/images/3.jpg" alt="3" title="3" id="wows1_2" /></li>
-                            <li><img src="slider/data1/images/4.jpg" alt="4" title="4" id="wows1_3" /></li>  
+                    <div class="ws_images"><ul>
+                            <li><img src="slider/data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+                            <li><img src="slider/data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+                            <li><img src="slider/data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+                            <li><img src="slider/data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
                             <li><img src="slider/data1/images/5.jpg" alt="5" title="5" id="wows1_4"/></li>
                             <li><img src="slider/data1/images/6.jpg" alt="6" title="6" id="wows1_5"/></li>
                             <li><img src="slider/data1/images/7.jpg" alt="7" title="7" id="wows1_6"/></li>
                             <li><img src="slider/data1/images/8.jpg" alt="8" title="8" id="wows1_7"/></li>
-                                
-                        </ul>
-                    </div>
-        
-                    <div class="ws_thumbs">
-                        <div>
+                        </ul></div>
+                        <div class="ws_thumbs">
+                    <div>
                             <a href="#" title="1"><img src="slider/data1/tooltips/1.jpg" alt="" /></a>
                             <a href="#" title="2"><img src="slider/data1/tooltips/2.jpg" alt="" /></a>
                             <a href="#" title="3"><img src="slider/data1/tooltips/3.jpg" alt="" /></a>
@@ -185,12 +250,12 @@
                             <a href="#" title="7"><img src="slider/data1/tooltips/7.jpg" alt="" /></a>
                             <a href="#" title="8"><img src="slider/data1/tooltips/8.jpg" alt="" /></a>
                         </div>
-        
-                        <div class="ws_script" ></div>
-                        <div class="ws_shadow"></div>
-        
-                        <script type="text/javascript" src="engine1/wowslider.js"></script>
-                        <script type="text/javascript" src="engine1/script.js"></script>
+                    </div>
+                    <div class="ws_script" style="position:absolute;left:-99%"></div>
+                    <div class="ws_shadow"></div>
+                    </div>	
+                    <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
+                    <script type="text/javascript" src="slider/engine1/script.js"></script>
                     </div>
         
                 </div>
@@ -297,7 +362,10 @@
                         <i class="social_icon fab fa-discord"></i>
                     </a>
                    
+
                     <a target="_blank" href="https://github.com/FundiFinance">
+
+                    <a target="_blank" href="http://www.google.com/">
                         <i class="social_icon fab fa-github"></i>
                     </a>
                     
@@ -320,7 +388,6 @@
                     <a target="_blank" href="https://t.me/FundiFinance">
                         <i class="social_icon fab fa-telegram"></i>
                     </a>
-                                    
                 </div>
                 <div>
                     <small>Copyright 2022 - Fundi Finance</small>
