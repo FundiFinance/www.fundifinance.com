@@ -1,417 +1,454 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/property-style.css">
+    <meta name="author" content="Fundi Finance" />
+    <meta name="description" content="decentralised finance protocol" />
     <title>Fundi Finance Real Estate</title>
-     <!-- Favicon-->
-     <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon.ico">
-     <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
-     <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
-     <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
-     <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
-     <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
-     <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
-     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
-     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
-     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
-     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
-     <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
-     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
-     <link rel="manifest" href="img/favicon/manifest.json">
-     <meta name="msapplication-TileColor" content="#121212">
-     <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
-     <meta name="theme-color" content="#121212">
-
+    <!-- Favicon-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#121212">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#f9f9f9">
+    <!-- Bootstrap Icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500&family=Dongle&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
-    <!-- Font Awesome icons -->
+    <!-- Carousel SCSS-->
+    <link rel="stylesheet" href="/css/carousel-style.css" rel="stylesheet">
+    <!-- SimpleLightbox plugin CSS-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+    <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
-    
-    <!-- Bootstrap icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet">
-    
-    <!-- Animaciones Scroll-->
-    <script src="js/rem-script.js"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Animon Library-->
+    <link rel="stylesheet" href="https://unpkg.com/animon@1.0.1/dist/animon.css" />
+    <script type="text/javascript" src="https://unpkg.com/animon@1.0.1/dist/animon.iife.js"></script>
 
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!--Slider-->
-    <link rel="stylesheet" type="text/css" href="slider/engine1/style.css" />
-    <script type="text/javascript" src="slider/engine1/jquery.js"></script>
-    <!--Script-->
-    <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
-    <script type="text/javascript" src="slider/engine1/script.js"></script>
-    
+    <!-- Lottie Files)-->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 
+    <script type="text/javascript" src="/js/carousel.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 </head>
 
-<!--Body ---------- --> 
-<body>
+<!--Body ---------- -->
+
+<body id="page-top">
 
     <!-- Header -->
     <header>
-        
-        <!--NavBarr-->
-        <nav id="navBar">
-            <div class="logo">
-             <a href="index.html"><img src="img/FF-logo-xs.png" width="100px" alt="brand"></a>   
-            </div>
-            <div class="contenedor">
+
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+            <!-- NAV CONTAINER -->
+            <div class="container-fluid px-lg-5">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/img/Colorlogofundinobg.svg" alt="" width="220" height="auto"
+                        class="d-inline-block align-text-top">
+                </a>
+                <!-- Button trigger modal Desk -->
+                <!-- <button type="button" id="wallet-desk" class="btn btn-primary ms-auto me-4 my-3 my-lg-0"
+                data-bs-toggle="modal" data-bs-target="#walletModal">
+                CONNECT WALLET
+            </button> -->
+                <!-- Button trigger modal mobile -->
+                <!-- <button type="button" class="btn btn-sm btn-primary d-block d-sm-none" data-bs-toggle="modal"
+                data-bs-target="#walletModal">
+                WALLETS
+            </button> -->
                 <!-- SIDEBAR -->
- <div class="nav-container" id="menuToggle">
-    <!--
-A fake / hidden checkbox is used as click reciever,
-so you can use the :checked selector on it.
--->
-    <input type="checkbox" />
+                <div class="nav-container" id="menuToggle">
+                    <!--
+      A fake / hidden checkbox is used as click reciever,
+      so you can use the :checked selector on it.
+      -->
+                    <input type="checkbox" />
 
-    <!--Some spans to act as a hamburger.
-
-They are acting like a real hamburger,
-not that McDonalds stuff.-->
-    <span></span>
-    <span></span>
-    <span></span>
-    <!--
-Too bad the menu has to be inside of the button
-but hey, it's pure CSS magic.
--->
-    <ul id="menu" class="nav-toggle text-center">
-        <a class="btn" href="index.html">
-            <li>Home</li>
-        </a>
-        <a class="btn" target="_blank" href="https://vote.fundifinance.com">
-            <li>Voting</li>
-        </a>
-        <a class="btn" href="realestatemarket.html">
-            <li>Real Estate</li>
-        </a>
-        <a class="btn" target="_blank" href="https://fundi-finance-1.gitbook.io/fundi-finance">
-            <li>Docs</li>
-        </a>
-        <!-- <a target="_blank" href="#!">
-            <li>Disclaimer</li>
-        </a> -->
-        <div class="buttons">
-        <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2" href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d">
-            FF on BSCScan
-        </a></div>
-        <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2"  href="https://bscscan.com/token/0xd6368dfd288a3d9ac769889c0ddfa7d0e20d5c29">
-            CRA on BSCScan
-        </a></div>
-    </div>
-        <hr>
-        <div>
-            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/exchange/BUSD-FF?network=bsc-mainnet" role="button">Buy FF</a>
-            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/liquidity?poolAddress=0x78f3c868b1cdeb37c256f30c65730f1c06fa5e76&network=bsc" role="button">Create FF LP</a>
-        </div>
-        <hr>
-        <div>
-            <!-- <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xaa08b5d4669f49cc007c80471d86f916ed9467c7" role="button">FF Single Staking</a> -->
-            <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xea138ba58243851b2e73c35488f2407b3bf20e90" role="button">FF LP Staking</a>
-        </div>
-        <hr>
-            <div class="small text-center text-muted my-2"><a class="btn btn-link"
-                    href="mailto:founder@fundifinance.com">founder@fundifinance.com</a></div>
-            <!-- Add font awesome icons -->
-            <div class="grid">
-                <a target="_blank" href="https://discord.gg/sr8EJP5hhF">
-                    <i class="social_icon fab fa-discord"></i>
-                </a>
-                <a target="_blank" href="https://github.com/FundiFinance">
-
-                <a target="_blank" href="http://www.google.com/">
-                    <i class="social_icon fab fa-github"></i>
-                </a>
-                
-                <a target="_blank" href="https://fundifinance.medium.com/">
-                    <i class="social_icon fab fa-medium"></i>
-                </a>
-               
-                <a target="_blank" href="https://www.tiktok.com/@fundifinance?">
-                    <i class="social_icon fab fa-tiktok"></i>
-                </a>
-               
-                <a target="_blank" href="https://twitter.com/FundiFinance">
-                    <i class="social_icon fab fa-twitter"></i>
-                </a>
-               
-                <a target="_blank" href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg">
-                    <i class="social_icon fab fa-youtube"></i>
-                </a>
-
-                <a target="_blank" href="https://t.me/FundiFinance">
-                    <i class="social_icon fab fa-telegram"></i>
-                </a>
+                    <!--Some spans to act as a hamburger.
+      
+      They are acting like a real hamburger,
+      not that McDonalds stuff.-->
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <!--
+      Too bad the menu has to be inside of the button
+      but hey, it's pure CSS magic.
+      -->
+                    <ul id="menu" class="nav-toggle text-center">
+                        <a href="#page-top">
+                            <li>Home</li>
+                        </a>
+                        <a target="_blank" href="https://vote.fundifinance.com">
+                            <li>Voting</li>
+                        </a>
+                        <a class="btn" href="realestatemarket.html">
+                            <li>Real Estate</li>
+                        </a>
+                        <a target="_blank" href="https://fundi-finance-1.gitbook.io/fundi-finance">
+                            <li>Docs</li>
+                        </a>
+                        <div class="">
+                            <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2"
+                                    href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d">
+                                    FF on BSCScan
+                                </a></div>
+                            <div class="col-sm-12"><a target="_blank" class="btn btn-primary my-2"
+                                    href="https://bscscan.com/token/0xd6368dfd288a3d9ac769889c0ddfa7d0e20d5c29">
+                                    CRA on BSCScan
+                                </a></div>
+                        </div>
+                        <hr>
+                        <div>
+                            <a class="btn btn-outline-dark btn-sm" target="_blank"
+                                href="https://app.dodoex.io/exchange/BUSD-FF?network=bsc-mainnet" role="button">Buy
+                                FF</a>
+                            <a class="btn btn-outline-dark btn-sm" target="_blank"
+                                href="https://app.dodoex.io/liquidity?poolAddress=0x78f3c868b1cdeb37c256f30c65730f1c06fa5e76&network=bsc"
+                                role="button">Create FF LP</a>
+                        </div>
+                        <hr>
+                        <div>
+                            <!-- <a class="btn btn-outline-dark btn-sm" target="_blank" href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xaa08b5d4669f49cc007c80471d86f916ed9467c7" role="button">FF Single Staking</a> -->
+                            <a class="btn btn-outline-dark btn-sm" target="_blank"
+                                href="https://app.dodoex.io/mining?network=bsc-mainnet&mining=0xea138ba58243851b2e73c35488f2407b3bf20e90"
+                                role="button">FF LP Staking</a>
+                        </div>
+                        <hr>
+                        <div class="my-4">
+                            <div class="small text-center text-muted my-2"><a class="btn btn-link"
+                                    href="mailto:founder@fundifinance.com">founder@fundifinance.com</a></div>
+                            <!-- Add font awesome icons -->
+                            <div class="social-icons text-center my-4">
+                                <a class="social-icon" target="_blank" href="https://twitter.com/FundiFinance"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="social-icon" target="_blank" href="https://fundifinance.medium.com/"><i
+                                        class="fab fa-medium"></i></a>
+                                <a class="social-icon" target="_blank" href="https://discord.gg/sr8EJP5hhF"><i
+                                        class="fab fa-discord"></i></a>
+                                <a class="social-icon" target="_blank" href="https://t.me/FundiFinance"><i
+                                        class="fab fa-telegram"></i></a>
+                                <a class="social-icon" target="_blank" href="https://github.com/FundiFinance"><i
+                                        class="fab fa-github"></i></a>
+                                <a class="social-icon" target="_blank" href="https://www.tiktok.com/@fundifinance?"><i
+                                        class="fab fa-tiktok"></i></a>
+                                <a class="social-icon" target="_blank"
+                                    href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
             </div>
-    </ul>
-</div>
-            </div>
-
-           
         </nav>
-        
-        <div id="headerSlider">
-            <div class="Slider">
-                <img class="image_bg" src="img/property_header.png" >
-                              
-            </div>
-            <div class="headerTitle">
-                <h1>Property Title</h1>
-            <div class="headerData">
-                <div class="dataIncome">
-                    <div class="imagen">
-                        <img src="img/chart-line-white.png" width="25px" height="25px">
-                    </div>
-                    <div class="incometitle">
-                        <h4>Expected Income</h4>
-                    </div>
-                    <div class="percent">
-                        <a>9.8%</a>
-                    </div>
-                </div>
-
-                <div class="rentToken">
-                    <div class="imagen">
-                        <img src="img/icon.svg" width="25px" height="25px">
-                    </div>
-                    <div class="tokentitle">
-                        <h4>Rent Per Token</h4>
-                    </div>
-                    <div class="percent">
-                        <a>9.8%</a>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-            <!-- BreadCrumb -->
-            <div id="bread">
-                <ul class="breadcrumb">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="property.html">Marketplace</a></li>
-                    <li><a href="property.html">Rent Start Date</a></li>    
-                </ul>
-            </div>
-
-
-            
-        </div>
     </header>
     <!-- Header End -->
-
-    <!-- Section 1 -->
-    <section id="section1" >
-        <div id="contenedor_title_slider">
-            <div class="title">
-                <h3>10030 Cadieux Rd, Detroit, MI 48224</h3>
+    <main class="main">
+        <!-- HERO -->
+        <div class="jumbotron">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1 class="display-4">Property Title</h1>
+                        <div class="d-flex justify-content-center">
+                                <h4 class="p-4"><i class="bi bi-piggy-bank"></i> Expected Income <span class="text-primary"> 8.8%</span></h4>
+                                <h4 class="p-4"><i class="bi bi-graph-up"></i> Rent per Token <span class="text-primary"> 8.8%</span></h4>
+                        </div>
+                        <!-- BREADCRUMB -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb justify-content-center">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item"><a href="realestatemarket.html">Marketplace</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Property Name</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
             </div>
-            <div class="contracts_title">
-                <h4>View Smart Contracts</h4>
-            </div>
-            <div class="btns">
-                <a href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d" class="btn btn-primary my-2" id="bsc_btn">BSC</a>
-                
-                <!-- Modificar SOL -->
-                <a href="https://solscan.io/" class="btn btn-primary my-2" id="sol_btn">SOL</a>
-            </div>
-            
+            <div class="overlay"></div>
         </div>
-        <div id="slider">
-            <!----------------------------------------------------------------------------->
-            <div class="displayContainer">
-                <div id="wowslider-container1">
-                    <div class="ws_images"><ul>
-                            <li><img src="slider/data1/images/1.jpg" alt="1" title="1" id="wows1_0"/></li>
-                            <li><img src="slider/data1/images/2.jpg" alt="2" title="2" id="wows1_1"/></li>
-                            <li><img src="slider/data1/images/3.jpg" alt="3" title="3" id="wows1_2"/></li>
-                            <li><img src="slider/data1/images/4.jpg" alt="4" title="4" id="wows1_3"/></li>
-                            <li><img src="slider/data1/images/5.jpg" alt="5" title="5" id="wows1_4"/></li>
-                            <li><img src="slider/data1/images/6.jpg" alt="6" title="6" id="wows1_5"/></li>
-                            <li><img src="slider/data1/images/7.jpg" alt="7" title="7" id="wows1_6"/></li>
-                            <li><img src="slider/data1/images/8.jpg" alt="8" title="8" id="wows1_7"/></li>
-                        </ul></div>
-                        <div class="ws_thumbs">
-                    <div>
-                            <a href="#" title="1"><img src="slider/data1/tooltips/1.jpg" alt="" /></a>
-                            <a href="#" title="2"><img src="slider/data1/tooltips/2.jpg" alt="" /></a>
-                            <a href="#" title="3"><img src="slider/data1/tooltips/3.jpg" alt="" /></a>
-                            <a href="#" title="4"><img src="slider/data1/tooltips/4.jpg" alt="" /></a>
-                            <a href="#" title="5"><img src="slider/data1/tooltips/5.jpg" alt="" /></a>
-                            <a href="#" title="6"><img src="slider/data1/tooltips/6.jpg" alt="" /></a>
-                            <a href="#" title="7"><img src="slider/data1/tooltips/7.jpg" alt="" /></a>
-                            <a href="#" title="8"><img src="slider/data1/tooltips/8.jpg" alt="" /></a>
+        <!-- HERO END -->
+
+        <!-- LISTING SECTION -->
+        <section id="listing" class="page-section">
+            <div class="container">
+                <div class="d-flex justify-content-center align-middle">
+                    <div class="m-2">
+                        <h2 class="text-center text-secondary m-x-4">Address, City. Country</h2>
+                    </div>
+                    <div class="m-2">
+                        <h4 class="text-center text-dark m-x-4">View Smart Contracts</h4>
+                    </div>
+                    <div class="m-2">
+                        <a href="https://bscscan.com/token/0x897611baba794d22d0a10f4c60a136baf298128d"
+                            class="btn btn-primary">BSC</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+            <!-- HIGHLIGHTS -->
+            <div class="container">
+
+                <div class="row d-flex">
+                    <!-- Property list -->
+                    <div class="col-md-3 col-sm-6">
+                    </div>
+                    <!-- Property list End -->
+                </div>
+            </div>
+        </section>
+        <!-- LISTING SECTION END -->
+
+        <!-- SLIDESHOW -->
+        <div class="container mt-5">
+            <div class="carousel-container position-relative row">
+
+                <!-- Sorry! Lightbox doesn't work - yet. -->
+
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-slide-number="0">
+                            <img src="/img/grid_img/1.jpg" class="d-block w-100" alt="..."
+                                data-remote="https://source.unsplash.com/Pn6iimgM-wo/" data-type="image"
+                                data-toggle="lightbox" data-gallery="example-gallery">
+                        </div>
+                        <div class="carousel-item" data-slide-number="1">
+                            <img src="/img/grid_img/2.jpg" class="d-block w-100" alt="..."
+                                data-remote="https://source.unsplash.com/tXqVe7oO-go/" data-type="image"
+                                data-toggle="lightbox" data-gallery="example-gallery">
+                        </div>
+                        <div class="carousel-item" data-slide-number="2">
+                            <img src="/img/grid_img/3.jpg" class="d-block w-100" alt="..."
+                                data-remote="https://source.unsplash.com/qlYQb7B9vog/" data-type="image"
+                                data-toggle="lightbox" data-gallery="example-gallery">
+                        </div>
+                        <div class="carousel-item" data-slide-number="3">
+                            <img src="/img/grid_img/4.jpg" class="d-block w-100" alt="..."
+                                data-remote="https://source.unsplash.com/QfEfkWk1Uhk/" data-type="image"
+                                data-toggle="lightbox" data-gallery="example-gallery">
                         </div>
                     </div>
-                    <div class="ws_script" style="position:absolute;left:-99%"></div>
-                    <div class="ws_shadow"></div>
-                    </div>	
-                    <script type="text/javascript" src="slider/engine1/wowslider.js"></script>
-                    <script type="text/javascript" src="slider/engine1/script.js"></script>
+                </div>
+
+                <!-- Carousel Navigation -->
+                <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row mx-0">
+                                <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected"
+                                    data-target="#myCarousel" data-slide-to="0">
+                                    <img src="/img/grid_img/1.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="1">
+                                    <img src="/img/grid_img/1.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="2">
+                                    <img src="/img/grid_img/2.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="3">
+                                    <img src="/img/grid_img/3.jpg" class="img-fluid" alt="...">
+                                </div>
+                                <div id="carousel-selector-4" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="4">
+                                    <img src="/img/grid_img/4.jpg" class="img-fluid" alt="...">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row mx-0">
+                                <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="6">
+                                    <img src="https://source.unsplash.com/uanoYn1AmPs/600x400/" class="img-fluid"
+                                        alt="...">
+                                </div>
+                                <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="7">
+                                    <img src="https://source.unsplash.com/_snqARKTgoc/600x400/" class="img-fluid"
+                                        alt="...">
+                                </div>
+                                <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="8">
+                                    <img src="https://source.unsplash.com/M9F8VR0jEPM/600x400/" class="img-fluid"
+                                        alt="...">
+                                </div>
+                                <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2"
+                                    data-target="#myCarousel" data-slide-to="9">
+                                    <img src="https://source.unsplash.com/Q1p7bh3SHj8/600x400/" class="img-fluid"
+                                        alt="...">
+                                </div>
+                                <div class="col-2 px-1 py-2"></div>
+                                <div class="col-2 px-1 py-2"></div>
+                            </div>
+                        </div>
                     </div>
-        
+                    <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+
+            </div> <!-- /row -->
+        </div> <!-- /container -->
+
+        <!------------------SLIDER END--------------------------------->
+
+        <!-- FEATURES SECTION -->
+        <section class="page-section">
+            <div class="container px-4 px-lg-5 justify-content-center">
+                <h1 class="text-center">Property Highlights</h1>
+            </div>
+            <!-- Features -->
+            <div class="container">
+                <div class="row my-5 offset-md-1">
+                    <div class="col-md-4 mx-4">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col"><i class="bi bi-graph-up"></i> Rent Start Date</th>
+                                    <th scope="col">2022-10-4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><i class="bi bi-graph-up"></i> Expected Income</th>
+                                    <td>9.8%</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="bi bi-boxes"></i>Rent per Token</th>
+                                    <td>9.8%</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><i class="bi bi-boxes"></i>Total Tokens</th>
+                                    <td>$50.01</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- PROPERTY TABLE -->
+                    <div class="col-md-5 d-flex mx-4">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Property Type</th>
+                                    <th scope="col">Collectible note raise NFT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"> Construction Year</th>
+                                    <td>2000</td>
+
+                                </tr>
+                                <tr>
+                                    <th scope="row">Total Units</th>
+                                    <td>10 Units</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Bedroom/Bath</th>
+                                    <td>3x2 Bed / 2x1 Bath</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Rental Type</th>
+                                    <td>Long-term</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Rented?</th>
+                                    <td>Fully Rented</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
-            <!----------------------------------------------------------------------------->
-        </div>
+        </section>
+        <!-- FEATURES SECTION END -->
 
-    </section>
-    <!-- Section 1 End -->
-
-    <!-- Section 2 -->
-    <section id="section2">
-        <div class="contenedor_title">
-            <h1>Porperty Highlights</h1>
-        </div>
-        <div id="grid_section2">
-            <div class="row">
-                <div class="column1">
-                    <div class="linea">
-                        <img class="icon" src="img/chart-line.png">
-                        <a class="text">Rent Start Date</a>
-                        <a class="data">2022-10-4</a>
+        <!-- MAP SECTION -->
+        <section class="page-section" id="map">
+            <div class="container align-middle text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="title">
+                            <h1>Address, City, Country</h1>
+                        </div>
+                        <div class="map_container">
+                            <!--<img src="img/map_img.png" width="100%" >-->
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.2090686403644!2d-82.92929488467635!3d42.40199287918402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d5e7deab2537%3A0x27ddfda461b01d14!2sCadieux%20Rd%2C%20Detroit%2C%20MI%2C%20EE.%20UU.!5e0!3m2!1ses!2sdo!4v1647577268437!5m2!1ses!2sdo"
+                                width="100%" height="600px" style="border:0;" allowfullscreen=""
+                                loading="lazy"></iframe>
+                        </div>
                     </div>
-                    <div class="linea">
-                        <img class="icon" src="img/chart-line.png">
-                        <a class="text">Expected Income</a>
-                        <a class="data">9.8%</a>
-                    </div>
-                    <div class="linea">
-                        <img class="icon" src="img/icon.svg">
-                        <a class="text">Rent per Token</a>
-                        <a class="data">9.8%</a>
-                    </div>
-                    <div class="linea">
-                        <img class="icon" src="img/icon.svg">
-                        <a class="text">Total Tokens</a>
-                        <a class="data">$50.01</a>
-                    </div>
-
-                </div>
-                <div class="column2">
-                    <div class="title">
-                        
-                        <a class="text1">Property Type</a>
-                        <a class="text2">Collectible note raise NFT</a>
-                    </div>
-                    <div class="linea">
-                        
-                        <a class="text">Construction Year</a>
-                        <a class="data">2000</a>
-                    </div>
-                    <div class="linea">
-                        
-                        <a class="text">Total Units</a>
-                        <a class="data">10 units</a>
-                    </div>
-                    <div class="linea">
-                        
-                        <a class="text">Bedroom/Bath</a>
-                        <a class="data">3x2 Bed / 2x1 Bath</a>
-                    </div>
-                    <div class="linea">
-                        
-                        <a class="text">Rental Type</a>
-                        <a class="data">Long-term</a>
-                    </div>
-                    <div class="linea">
-                        
-                        <a class="text">Rented?</a>
-                        <a class="data">Fully Rented</a>
-                    </div>
-
-                </div>
-            </div>    
-        </div>
-    </section>
-    <!-- Section 2 End -->
-
-    <!-- Section 3-->
-    <section id="section3">
-        <div class="title">
-            <h1>10030 Cadieux Rd, Detroit, MI 48224</h1>
-        </div>
-
-        <div class="map_contenedor">
-            <!--<img src="img/map_img.png" width="100%" >-->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2946.2090686403644!2d-82.92929488467635!3d42.40199287918402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824d5e7deab2537%3A0x27ddfda461b01d14!2sCadieux%20Rd%2C%20Detroit%2C%20MI%2C%20EE.%20UU.!5e0!3m2!1ses!2sdo!4v1647577268437!5m2!1ses!2sdo" width="100%" height="600px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-        </div>
-    </section>
-    <!-- Section 3 End-->
-
-    <!--Footer  -->
-    <footer id="footer">
-        <div>
-            <div class="footer_title">
-                <a>founder@fundifinance.com</a>
-            </div>
-            <div class="footer_socials">
-                <div class="social_title">
-                    <h3>join the comunity</h3>
-                </div>
-                <div class="grid">
-                    <a target="_blank" href="https://discord.gg/sr8EJP5hhF">
-                        <i class="social_icon fab fa-discord"></i>
-                    </a>
-                   
-
-                    <a target="_blank" href="https://github.com/FundiFinance">
-
-                    <a target="_blank" href="http://www.google.com/">
-                        <i class="social_icon fab fa-github"></i>
-                    </a>
-                    
-                    <a target="_blank" href="https://fundifinance.medium.com/">
-                        <i class="social_icon fab fa-medium"></i>
-                    </a>
-                   
-                    <a target="_blank" href="https://www.tiktok.com/@fundifinance?">
-                        <i class="social_icon fab fa-tiktok"></i>
-                    </a>
-                   
-                    <a target="_blank" href="https://twitter.com/FundiFinance">
-                        <i class="social_icon fab fa-twitter"></i>
-                    </a>
-                   
-                    <a target="_blank" href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg">
-                        <i class="social_icon fab fa-youtube"></i>
-                    </a>
-
-                    <a target="_blank" href="https://t.me/FundiFinance">
-                        <i class="social_icon fab fa-telegram"></i>
-                    </a>
-                </div>
-                <div>
-                    <small>Copyright 2022 - Fundi Finance</small>
                 </div>
             </div>
+        </section>
+        <!-- MAP End-->
+    </main>
+
+    <!-- Footer-->
+    <footer class="bg-dark py-5">
+        <div class="container-fluid px-4 px-lg-5">
+            <div class="small text-center text-muted my-4"><a class="btn btn-link"
+                    href="mailto:founder@fundifinance.com">founder@fundifinance.com</a></div>
+            <!-- Add font awesome icons -->
+            <div class="social-icons text-center my-4">
+                <a class="social-icon" target="_blank" href="https://twitter.com/FundiFinance"><i
+                        class="fab fa-twitter"></i></a>
+                <a class="social-icon" target="_blank" href="https://fundifinance.medium.com/"><i
+                        class="fab fa-medium"></i></a>
+                <a class="social-icon" target="_blank" href="https://discord.gg/sr8EJP5hhF"><i
+                        class="fab fa-discord"></i></a>
+                <a class="social-icon" target="_blank" href="https://t.me/FundiFinance"><i
+                        class="fab fa-telegram"></i></a>
+                <a class="social-icon" target="_blank" href="https://github.com/FundiFinance"><i
+                        class="fab fa-github"></i></a>
+                <a class="social-icon" target="_blank" href="https://www.tiktok.com/@fundifinance?"><i
+                        class="fab fa-tiktok"></i></a>
+                <a class="social-icon" target="_blank"
+                    href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg"><i class="fab fa-youtube"></i></a>
+            </div>
+
+            <div class="small text-center text-muted">Copyright &copy; 2021 - Fundi Finance</div>
+
 
         </div>
-
     </footer>
     <!--Footer End-->
 
-
-    
 </body>
 <!--Body End -->
-
-<!-- Menu Float-->
-<script>
-
-    const menuName = document.getElementById("menu");
-    
-    function showMenu(){menuName.style.display = "block";}
-    function hideMenu(){menuName.style.display = "none";}
-
-</script>
 
 </html>

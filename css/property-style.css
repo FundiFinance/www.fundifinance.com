@@ -31,7 +31,7 @@ body {
   margin: 5px;
 }
 
-#navBar .contenedor {
+#navBar .container {
   display: flex;
   margin: 10px;
   width: 100%;
@@ -39,18 +39,18 @@ body {
   align-items: center;
 }
 
-.contenedor ul {
+.container ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.contenedor ul li {
+.container ul li {
   float: right;
 }
 
-.contenedor li a {
+.container li a {
   display: block;
   color: white;
   text-align: center;
@@ -58,7 +58,7 @@ body {
   text-decoration: none;
 }
 
-.contenedor ul li a:hover {
+.container ul li a:hover {
   background-color: #111;
 }
 
@@ -202,18 +202,18 @@ body {
   align-content: center;
 }
 
-.contenedor ul {
+.container ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
 
-.contenedor ul li {
+.container ul li {
   float: right;
 }
 
-.contenedor li a {
+.container li a {
   display: block;
   color: white;
   text-align: center;
@@ -221,7 +221,7 @@ body {
   text-decoration: none;
 }
 
-.contenedor ul li a:hover {
+.container ul li a:hover {
   background-color: #111;
 }
 
@@ -268,8 +268,9 @@ header #headerSlider {
   position: relative;
 }
 
-#headerSlider img {
+#headerSlider .image_bg {
   width: 100%;
+  filter: brightness(50%);
 }
 
 #headerSlider .headerTitle {
@@ -349,7 +350,7 @@ header #headerSlider {
   align-self: center;
 }
 
-/*breadcrumb*/
+/*header breadcrumb*/
 #bread {
   position: absolute;
   top: 60%;
@@ -377,13 +378,14 @@ ul.breadcrumb li a {
   text-decoration: none;
 }
 
+
 ul.breadcrumb li a:hover {
   color: #c5c8a9;
   text-decoration: underline;
 }
 
-/*---- Seccion1 ----*/
-#section1 {
+/*---- Seccion Listing----*/
+#listing {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -391,26 +393,26 @@ ul.breadcrumb li a:hover {
   align-self: center;
 }
 
-#contenedor_title_slider {
+#container_title_slider {
   display: flex;
   flex-direction: row;
   padding: 0;
   justify-content: center;
 }
 
-#contenedor_title_slider .title {
+#container_title_slider .title {
   color: #000;
   font-size: 24px;
 }
 
-#contenedor_title_slider .contracts_title {
+#container_title_slider .contracts_title {
   color: #000;
   font-size: 20px;
   align-self: center;
   margin: 15px;
 }
 
-#contenedor_title_slider .btns {
+#container_title_slider .btns {
   display: flex;
   flex-direction: row;
   color: #000;
@@ -460,14 +462,14 @@ ul.breadcrumb li a:hover {
   width: 100%;
 }
 
-/*Seccion 2 */
-#section2 {
+/*Seccion Highlights */
+#highlights {
   width: 90%;
   height: 500px;
   align-self: center;
 }
 
-#section2 .contenedor_title {
+#highlights .container_title {
   text-align: center;
   font-family: "Cairo", sans-serif;
   font-style: bold;
@@ -477,7 +479,7 @@ ul.breadcrumb li a:hover {
   font-weight: 700;
 }
 
-#grid_section2 {
+#grid_highlights {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -485,7 +487,7 @@ ul.breadcrumb li a:hover {
   justify-content: center;
 }
 
-#grid_section2 .row {
+#grid_highlights .row {
   display: flex;
   flex-direction: row;
 }
@@ -495,7 +497,7 @@ ul.breadcrumb li a:hover {
   width: 381px;
 }
 
-.column1 .linea {
+.column1 .line {
   display: flex;
   flex-direction: row;
   border-style: solid;
@@ -506,18 +508,18 @@ ul.breadcrumb li a:hover {
   border-right: 0;
   padding-top: 10px;
 }
-.column1 .linea .icon {
+.column1 .line .icon {
   width: 15px;
   height: 12px;
   margin: 2px;
   align-self: center;
 }
 
-.column1 .linea .text {
+.column1 .line .text {
   margin-right: 30px;
 }
 
-.column1 .linea .data {
+.column1 .line .data {
   font-size: 18px;
   color: #000;
   font-weight: 700;
@@ -530,7 +532,7 @@ ul.breadcrumb li a:hover {
   width: 381px;
 }
 
-.row .column2 .linea {
+.row .column2 .line {
   display: flex;
   flex-direction: row;
   border-style: solid;
@@ -542,7 +544,7 @@ ul.breadcrumb li a:hover {
   padding-top: 10px;
 }
 
-.column2 .linea .data {
+.column2 .line .data {
   font-weight: bold;
   font-size: 18px;
   margin-left: auto;
@@ -568,9 +570,9 @@ ul.breadcrumb li a:hover {
   font-size: 18px;
 }
 
-/* SECCION 3 */
+/* SECCION MAP */
 
-#section3 {
+#map {
   display: flex;
   flex-direction: column;
   width: 60%;
@@ -578,17 +580,17 @@ ul.breadcrumb li a:hover {
   height: 900px;
 }
 
-#section3 .title {
+#map .title {
   text-align: left;
   font-size: 32px;
   color: #000;
 }
 
-#section3 .map_contenedor {
+#map .map_container {
   width: 100%;
 }
 
-.map_contenedor img {
+.map_container img {
   width: 100%;
 }
 
