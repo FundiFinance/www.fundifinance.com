@@ -26,7 +26,7 @@
   --bs-gray: #6c757d;
   --bs-gray-dark: #121212;
   --bs-primary: #c5c8a9;
-  --bs-secondary: #6c757d;
+  --bs-secondary: #5B72A8;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -58,7 +58,7 @@
   }
 } */
 
-fundilogo {
+.fundilogo {
   margin-top: 10px;
 }
 
@@ -71,11 +71,11 @@ body {
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
-  background: radial-gradient(
+  /* background: radial-gradient(
     ellipse farthest-corner at 90% 60vh,
     rgb(10, 20, 40) 5%,
     rgb(10, 10, 10) 100%
-  );
+  ); */
   background-repeat: none;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -5105,6 +5105,111 @@ fieldset:disabled .btn {
   color: #fff;
 }
 
+.jumbotron {
+  display: flex;
+  align-items: center;
+  color: white;
+  background-image: url("/img/property_header.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  /* filter: brightness(60%); */
+}
+
+.jumbotron .container{
+  z-index: 2;
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: inherit;
+  background-color: black;
+  opacity: 0.5;
+}
+
+#myVideo {
+  object-fit: cover;
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(50%);
+  z-index: -1;
+}
+
+/* CARROUSEL */
+.carousel {
+  position: relative;
+}
+.carousel-item img {
+  object-fit: cover;
+}
+#carousel-thumbs {
+  background: rgba(255,255,255,.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+#carousel-thumbs img {
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+#carousel-thumbs img:hover {
+  border-color: rgba(255,255,255,.3);
+}
+#carousel-thumbs .selected img {
+  border-color: #fff;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 3px;
+  }
+}
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background: #ccccce;
+  }
+}
+
+
+/* SECCION MAP */
+
+#map {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  height: 900px;
+}
+
+#map .title {
+  text-align: left;
+  font-size: 32px;
+  color: #000;
+}
+
+#map .map_container {
+  width: 100%;
+}
+
+.map_container img {
+  width: 100%;
+}
+
 .card {
   position: relative;
   display: flex;
@@ -5115,6 +5220,23 @@ fieldset:disabled .btn {
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  -webkit-box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.05); 
+  box-shadow: 0px 10px 15px -11px rgba(0,0,0,0.05);
+}
+
+.card .status{
+  position: absolute;
+  margin: 1rem;
+  text-align: center;
+  align-content: center;
+  background-color: white;
+  border-radius: 1rem;
+
+}
+
+.card a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card > hr {
@@ -5147,6 +5269,8 @@ fieldset:disabled .btn {
 .card-body {
   flex: 1 1 auto;
   padding: 1rem 1rem;
+  align-items: stretch;
+
 }
 
 .card-title {
@@ -5448,7 +5572,7 @@ fieldset:disabled .btn {
 }
 
 .breadcrumb-item.active {
-  color: #6c757d;
+  color: white;
 }
 
 .pagination {
@@ -5556,7 +5680,7 @@ fieldset:disabled .btn {
   padding: 0.35em 0.65em;
   font-size: 0.75em;
   font-weight: 700;
-  line-height: 1;
+  /* line-height: 1; */
   color: #fff;
   text-align: center;
   white-space: nowrap;

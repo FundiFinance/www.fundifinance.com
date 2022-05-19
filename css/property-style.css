@@ -1,0 +1,647 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  background-color: #f9f9f9;
+  color: #000;
+  font-family: "Cairo", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+  margin: 0;
+  width: 100%;
+  height: 70px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.205);
+  z-index: 150;
+}
+
+#navBar .logo {
+  width: 100px;
+  height: 50px;
+  margin: 5px;
+}
+
+#navBar .container {
+  display: flex;
+  margin: 10px;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+}
+
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container ul li {
+  float: right;
+}
+
+.container li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.container ul li a:hover {
+  background-color: #111;
+}
+
+/* SIDEBAR */
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * MIT license*/
+
+#menu a {
+  text-decoration: none;
+  color: #232323;
+  transition: color 0.3s ease;
+}
+
+#menu a:hover {
+  color: var(--bs-primary);
+}
+
+#menuToggle {
+  display: block;
+  top: 50px;
+  right: 50px;
+  z-index: 1;
+
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input {
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+
+  cursor: pointer;
+
+  opacity: 0;
+  /* hide this */
+  z-index: 2;
+  /* and place it over the hamburger */
+
+  -webkit-touch-callout: none;
+}
+
+/*
+    * Just a quick hamburger
+    */
+#menuToggle span {
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  background: #cdcdcd;
+  border-radius: 3px;
+  z-index: 1;
+
+  transform-origin: 4px 0px;
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+    background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+  transform-origin: 0% 100%;
+}
+
+/* 
+    * Transform all the slices of hamburger
+    * into a crossmark.
+    */
+#menuToggle input:checked ~ span {
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+    * But let's hide the middle one.
+    */
+#menuToggle input:checked ~ span:nth-last-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+    * Oh yeah and the last one should go the other direction
+    */
+#menuToggle input:checked ~ span:nth-last-child(2) {
+  opacity: 1;
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+    * Make this absolute positioned
+    * at the top left of the screen
+    */
+
+#menu {
+  position: fixed;
+  width: 0px;
+  height: 100%;
+  padding: 1rem;
+  /* padding-top: 5rem; */
+  top: 0;
+  right: 0;
+  overflow-x: hidden;
+  /* needed because hiding the menu on the right side is not perfect,  */
+
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0);
+
+  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+
+#menu li {
+  padding: 0.5rem;
+  font-size: 1.5rem;
+}
+
+/*
+    * And let's fade it in from the right
+    */
+#menuToggle input:checked ~ ul {
+  transform: none;
+  width: 340px;
+  opacity: 1;
+  display: inline-grid;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+}
+
+.container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.container ul li {
+  float: right;
+}
+
+.container li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.container ul li a:hover {
+  background-color: #111;
+}
+
+.buttons {
+  display: inline-flex;
+  margin: 16px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  line-height: 64px;
+}
+
+.btn {
+  padding: 8px 16px;
+  color: solid 1px black;
+  border-radius: 40px;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.btn {
+  transition-duration: 0.4s;
+}
+.btn-primary {
+  color: #000;
+  background-color: #c5c8a9;
+}
+
+.btn-primary:hover {
+  background-color: #a4a78e;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+header #headerSlider {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+#headerSlider .image_bg {
+  width: 100%;
+  filter: brightness(50%);
+}
+
+#headerSlider .headerTitle {
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
+  z-index: 4;
+  color: #fff;
+  font-size: 32px;
+}
+
+#headerSlider .headerData {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.headerData .dataIncome {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  justify-items: center;
+  padding: 5px;
+  margin: 20px;
+}
+
+.dataIncome .imagen {
+  height: fit-content;
+  align-self: center;
+}
+
+.dataIncome .incometitle {
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  padding: 0;
+  justify-content: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+.dataIncome .percent {
+  color: #c5c8a9;
+  align-self: center;
+}
+
+.headerData .rentToken {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  justify-items: left;
+  padding: 5px;
+}
+
+.rentToken .imagen {
+  height: fit-content;
+  align-self: center;
+}
+
+.tokentitle {
+  color: #fff;
+  width: 150px;
+  text-align: center;
+  padding: 0%;
+  justify-content: center;
+  margin: 0;
+  font-size: 20px;
+}
+
+.rentToken .percent {
+  color: #c5c8a9;
+  align-self: center;
+}
+
+/*header breadcrumb*/
+#bread {
+  position: absolute;
+  top: 60%;
+  align-self: center;
+}
+
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+}
+
+ul.breadcrumb li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumb li + li:before {
+  padding: 8px;
+  color: #f9f9f9;
+  content: ">\00a0";
+}
+
+ul.breadcrumb li a {
+  color: #f9f9f9;
+  text-decoration: none;
+}
+
+
+ul.breadcrumb li a:hover {
+  color: #c5c8a9;
+  text-decoration: underline;
+}
+
+/*---- Seccion Listing----*/
+#listing {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  align-self: center;
+}
+
+#container_title_slider {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: center;
+}
+
+#container_title_slider .title {
+  color: #000;
+  font-size: 24px;
+}
+
+#container_title_slider .contracts_title {
+  color: #000;
+  font-size: 20px;
+  align-self: center;
+  margin: 15px;
+}
+
+#container_title_slider .btns {
+  display: flex;
+  flex-direction: row;
+  color: #000;
+  font-size: 16px;
+  align-self: center;
+  margin: 5px;
+  text-decoration: none !important;
+}
+
+.btns {
+  transition-duration: 0.4s;
+}
+.btns #bsc_btn {
+  width: 84px;
+  height: 100%;
+  margin-left: 5px;
+  margin-right: 10px;
+  text-align: center;
+  background-color: #c5c8a9;
+}
+
+.btns .bsc_btn:hover {
+  background-color: #a4a78e;
+}
+
+.btns #sol_btn {
+  border-width: 1px;
+  width: 84px;
+  height: 100%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.btns .sol_btn:hover {
+  background-color: #a4a78e;
+}
+
+.btns a {
+  text-decoration: none;
+}
+
+#slider {
+  width: 100%;
+}
+
+#slider .displayContainer {
+  width: 100%;
+}
+
+/*Seccion Highlights */
+#highlights {
+  width: 90%;
+  height: 500px;
+  align-self: center;
+}
+
+#highlights .container_title {
+  text-align: center;
+  font-family: "Cairo", sans-serif;
+  font-style: bold;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #000;
+  font-weight: 700;
+}
+
+#grid_highlights {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 280px;
+  justify-content: center;
+}
+
+#grid_highlights .row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row .column1 {
+  margin-right: 85px;
+  width: 381px;
+}
+
+.column1 .line {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: darkgray;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-top: 10px;
+}
+.column1 .line .icon {
+  width: 15px;
+  height: 12px;
+  margin: 2px;
+  align-self: center;
+}
+
+.column1 .line .text {
+  margin-right: 30px;
+}
+
+.column1 .line .data {
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+.row .column2 {
+  margin-left: 85px;
+  width: 381px;
+}
+
+.row .column2 .line {
+  display: flex;
+  flex-direction: row;
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-color: darkgray;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  padding-top: 10px;
+}
+
+.column2 .line .data {
+  font-weight: bold;
+  font-size: 18px;
+  margin-left: auto;
+}
+
+.column2 .title {
+  display: flex;
+  flex-direction: row;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.column2 .title .text1 {
+  color: #000;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.column2 .title .text2 {
+  margin-left: auto;
+  color: #5b72a8;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* SECCION MAP */
+
+#map {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  align-self: center;
+  height: 900px;
+}
+
+#map .title {
+  text-align: left;
+  font-size: 32px;
+  color: #000;
+}
+
+#map .map_container {
+  width: 100%;
+}
+
+.map_container img {
+  width: 100%;
+}
+
+#footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  text-align: center;
+  color: #fff;
+}
+
+.footer_title {
+  margin: 10px;
+  font-size: 24px;
+  color: #c5c8a9;
+}
+
+.footer_socials .grid .social_icon {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+  background-color: transparent;
+  color: #fff;
+  border-radius: 100%;
+  padding: 1rem;
+}
+
+.footer_socials .grid .social_icon:last-child {
+  margin-right: 0;
+}
+
+.grid .social_icon:hover {
+  color: #c5c8a9;
+}
+
+/*Animaciones*/
+/* 
+#section1 {
+
+    opacity: 0;
+    position: relative;
+    bottom: -40px;
+    transition: all .5s ease-out;
+
+}
+
+
+#section1.show {
+    opacity: 1;
+    bottom: 0;
+} */
