@@ -25,6 +25,8 @@
     <meta name="msapplication-TileColor" content="#121212">
     <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#121212">
+    <!-- Privacy consent manager-->
+    <!-- <script type="text/javascript" data-cmp-ab="1" src="https://cdn.consentmanager.net/delivery/autoblocking/4346f5a2e1a46.js" data-cmp-host="c.delivery.consentmanager.net" data-cmp-cdn="cdn.consentmanager.net" data-cmp-codesrc="0"></script> -->
     <!-- Bootstrap Icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <!-- Google fonts-->
@@ -32,6 +34,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- Carousel SCSS-->
     <link rel="stylesheet" href="/css/carousel-style.css" rel="stylesheet">
+    <!-- Cookiers CSS-->
+    <link rel="stylesheet" href="/css/cookies-modal.css" rel="stylesheet">
     <!-- SimpleLightbox plugin CSS-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
     <!-- Font Awesome icons (free version)-->
@@ -69,6 +73,11 @@
 </head>
 
 <body id="page-top">
+    
+<!-- Privacy consent Manager script-->
+    <script>if(!("gdprAppliesGlobally" in window)){window.gdprAppliesGlobally=true}if(!("cmp_id" in window)||window.cmp_id<1){window.cmp_id=0}if(!("cmp_cdid" in window)){window.cmp_cdid="4346f5a2e1a46"}if(!("cmp_params" in window)){window.cmp_params=""}if(!("cmp_host" in window)){window.cmp_host="c.delivery.consentmanager.net"}if(!("cmp_cdn" in window)){window.cmp_cdn="cdn.consentmanager.net"}if(!("cmp_proto" in window)){window.cmp_proto="https:"}if(!("cmp_codesrc" in window)){window.cmp_codesrc="0"}window.cmp_getsupportedLangs=function(){var b=["DE","EN","FR","IT","NO","DA","FI","ES","PT","RO","BG","ET","EL","GA","HR","LV","LT","MT","NL","PL","SV","SK","SL","CS","HU","RU","SR","ZH","TR","UK","AR","BS"];if("cmp_customlanguages" in window){for(var a=0;a<window.cmp_customlanguages.length;a++){b.push(window.cmp_customlanguages[a].l.toUpperCase())}}return b};window.cmp_getRTLLangs=function(){var a=["AR"];if("cmp_customlanguages" in window){for(var b=0;b<window.cmp_customlanguages.length;b++){if("r" in window.cmp_customlanguages[b]&&window.cmp_customlanguages[b].r){a.push(window.cmp_customlanguages[b].l)}}}return a};window.cmp_getlang=function(j){if(typeof(j)!="boolean"){j=true}if(j&&typeof(cmp_getlang.usedlang)=="string"&&cmp_getlang.usedlang!==""){return cmp_getlang.usedlang}var g=window.cmp_getsupportedLangs();var c=[];var f=location.hash;var e=location.search;var a="languages" in navigator?navigator.languages:[];if(f.indexOf("cmplang=")!=-1){c.push(f.substr(f.indexOf("cmplang=")+8,2).toUpperCase())}else{if(e.indexOf("cmplang=")!=-1){c.push(e.substr(e.indexOf("cmplang=")+8,2).toUpperCase())}else{if("cmp_setlang" in window&&window.cmp_setlang!=""){c.push(window.cmp_setlang.toUpperCase())}else{if(a.length>0){for(var d=0;d<a.length;d++){c.push(a[d])}}}}}if("language" in navigator){c.push(navigator.language)}if("userLanguage" in navigator){c.push(navigator.userLanguage)}var h="";for(var d=0;d<c.length;d++){var b=c[d].toUpperCase();if(g.indexOf(b)!=-1){h=b;break}if(b.indexOf("-")!=-1){b=b.substr(0,2)}if(g.indexOf(b)!=-1){h=b;break}}if(h==""&&typeof(cmp_getlang.defaultlang)=="string"&&cmp_getlang.defaultlang!==""){return cmp_getlang.defaultlang}else{if(h==""){h="EN"}}h=h.toUpperCase();return h};(function(){var u=document;var v=u.getElementsByTagName;var h=window;var o="";var b="_en";if("cmp_getlang" in h){o=h.cmp_getlang().toLowerCase();if("cmp_customlanguages" in h){for(var q=0;q<h.cmp_customlanguages.length;q++){if(h.cmp_customlanguages[q].l.toUpperCase()==o.toUpperCase()){o="en";break}}}b="_"+o}function x(i,e){var w="";i+="=";var s=i.length;var d=location;if(d.hash.indexOf(i)!=-1){w=d.hash.substr(d.hash.indexOf(i)+s,9999)}else{if(d.search.indexOf(i)!=-1){w=d.search.substr(d.search.indexOf(i)+s,9999)}else{return e}}if(w.indexOf("&")!=-1){w=w.substr(0,w.indexOf("&"))}return w}var k=("cmp_proto" in h)?h.cmp_proto:"https:";if(k!="http:"&&k!="https:"){k="https:"}var g=("cmp_ref" in h)?h.cmp_ref:location.href;var j=u.createElement("script");j.setAttribute("data-cmp-ab","1");var c=x("cmpdesign","cmp_design" in h?h.cmp_design:"");var f=x("cmpregulationkey","cmp_regulationkey" in h?h.cmp_regulationkey:"");var r=x("cmpgppkey","cmp_gppkey" in h?h.cmp_gppkey:"");var n=x("cmpatt","cmp_att" in h?h.cmp_att:"");j.src=k+"//"+h.cmp_host+"/delivery/cmp.php?"+("cmp_id" in h&&h.cmp_id>0?"id="+h.cmp_id:"")+("cmp_cdid" in h?"&cdid="+h.cmp_cdid:"")+"&h="+encodeURIComponent(g)+(c!=""?"&cmpdesign="+encodeURIComponent(c):"")+(f!=""?"&cmpregulationkey="+encodeURIComponent(f):"")+(r!=""?"&cmpgppkey="+encodeURIComponent(r):"")+(n!=""?"&cmpatt="+encodeURIComponent(n):"")+("cmp_params" in h?"&"+h.cmp_params:"")+(u.cookie.length>0?"&__cmpfcc=1":"")+"&l="+o.toLowerCase()+"&o="+(new Date()).getTime();j.type="text/javascript";j.async=true;if(u.currentScript&&u.currentScript.parentElement){u.currentScript.parentElement.appendChild(j)}else{if(u.body){u.body.appendChild(j)}else{var t=v("body");if(t.length==0){t=v("div")}if(t.length==0){t=v("span")}if(t.length==0){t=v("ins")}if(t.length==0){t=v("script")}if(t.length==0){t=v("head")}if(t.length>0){t[0].appendChild(j)}}}var m="js";var p=x("cmpdebugunminimized","cmpdebugunminimized" in h?h.cmpdebugunminimized:0)>0?"":".min";var a=x("cmpdebugcoverage","cmp_debugcoverage" in h?h.cmp_debugcoverage:"");if(a=="1"){m="instrumented";p=""}var j=u.createElement("script");j.src=k+"//"+h.cmp_cdn+"/delivery/"+m+"/cmp"+b+p+".js";j.type="text/javascript";j.setAttribute("data-cmp-ab","1");j.async=true;if(u.currentScript&&u.currentScript.parentElement){u.currentScript.parentElement.appendChild(j)}else{if(u.body){u.body.appendChild(j)}else{var t=v("body");if(t.length==0){t=v("div")}if(t.length==0){t=v("span")}if(t.length==0){t=v("ins")}if(t.length==0){t=v("script")}if(t.length==0){t=v("head")}if(t.length>0){t[0].appendChild(j)}}}})();window.cmp_addFrame=function(b){if(!window.frames[b]){if(document.body){var a=document.createElement("iframe");a.style.cssText="display:none";if("cmp_cdn" in window&&"cmp_ultrablocking" in window&&window.cmp_ultrablocking>0){a.src="//"+window.cmp_cdn+"/delivery/empty.html"}a.name=b;a.setAttribute("title","Intentionally hidden, please ignore");a.setAttribute("role","none");a.setAttribute("tabindex","-1");document.body.appendChild(a)}else{window.setTimeout(window.cmp_addFrame,10,b)}}};window.cmp_rc=function(h){var b=document.cookie;var f="";var d=0;while(b!=""&&d<100){d++;while(b.substr(0,1)==" "){b=b.substr(1,b.length)}var g=b.substring(0,b.indexOf("="));if(b.indexOf(";")!=-1){var c=b.substring(b.indexOf("=")+1,b.indexOf(";"))}else{var c=b.substr(b.indexOf("=")+1,b.length)}if(h==g){f=c}var e=b.indexOf(";")+1;if(e==0){e=b.length}b=b.substring(e,b.length)}return(f)};window.cmp_stub=function(){var a=arguments;__cmp.a=__cmp.a||[];if(!a.length){return __cmp.a}else{if(a[0]==="ping"){if(a[1]===2){a[2]({gdprApplies:gdprAppliesGlobally,cmpLoaded:false,cmpStatus:"stub",displayStatus:"hidden",apiVersion:"2.0",cmpId:31},true)}else{a[2](false,true)}}else{if(a[0]==="getUSPData"){a[2]({version:1,uspString:window.cmp_rc("")},true)}else{if(a[0]==="getTCData"){__cmp.a.push([].slice.apply(a))}else{if(a[0]==="addEventListener"||a[0]==="removeEventListener"){__cmp.a.push([].slice.apply(a))}else{if(a.length==4&&a[3]===false){a[2]({},false)}else{__cmp.a.push([].slice.apply(a))}}}}}}};window.cmp_gpp_ping=function(){return{gppVersion:"1.0",cmpStatus:"stub",cmpDisplayStatus:"hidden",supportedAPIs:["tcfca","usnat","usca","usva","usco","usut","usct"],cmpId:31}};window.cmp_gppstub=function(){var a=arguments;__gpp.q=__gpp.q||[];if(!a.length){return __gpp.q}var g=a[0];var f=a.length>1?a[1]:null;var e=a.length>2?a[2]:null;if(g==="ping"){return window.cmp_gpp_ping()}else{if(g==="addEventListener"){__gpp.e=__gpp.e||[];if(!("lastId" in __gpp)){__gpp.lastId=0}__gpp.lastId++;var c=__gpp.lastId;__gpp.e.push({id:c,callback:f});return{eventName:"listenerRegistered",listenerId:c,data:true,pingData:window.cmp_gpp_ping()}}else{if(g==="removeEventListener"){var h=false;__gpp.e=__gpp.e||[];for(var d=0;d<__gpp.e.length;d++){if(__gpp.e[d].id==e){__gpp.e[d].splice(d,1);h=true;break}}return{eventName:"listenerRemoved",listenerId:e,data:h,pingData:window.cmp_gpp_ping()}}else{if(g==="getGPPData"){return{sectionId:3,gppVersion:1,sectionList:[],applicableSections:[0],gppString:"",pingData:window.cmp_gpp_ping()}}else{if(g==="hasSection"||g==="getSection"||g==="getField"){return null}else{__gpp.q.push([].slice.apply(a))}}}}}};window.cmp_msghandler=function(d){var a=typeof d.data==="string";try{var c=a?JSON.parse(d.data):d.data}catch(f){var c=null}if(typeof(c)==="object"&&c!==null&&"__cmpCall" in c){var b=c.__cmpCall;window.__cmp(b.command,b.parameter,function(h,g){var e={__cmpReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")})}if(typeof(c)==="object"&&c!==null&&"__uspapiCall" in c){var b=c.__uspapiCall;window.__uspapi(b.command,b.version,function(h,g){var e={__uspapiReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")})}if(typeof(c)==="object"&&c!==null&&"__tcfapiCall" in c){var b=c.__tcfapiCall;window.__tcfapi(b.command,b.version,function(h,g){var e={__tcfapiReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")},b.parameter)}if(typeof(c)==="object"&&c!==null&&"__gppCall" in c){var b=c.__gppCall;window.__gpp(b.command,function(h,g){var e={__gppReturn:{returnValue:h,success:g,callId:b.callId}};d.source.postMessage(a?JSON.stringify(e):e,"*")},"parameter" in b?b.parameter:null,"version" in b?b.version:1)}};window.cmp_setStub=function(a){if(!(a in window)||(typeof(window[a])!=="function"&&typeof(window[a])!=="object"&&(typeof(window[a])==="undefined"||window[a]!==null))){window[a]=window.cmp_stub;window[a].msgHandler=window.cmp_msghandler;window.addEventListener("message",window.cmp_msghandler,false)}};window.cmp_setGppStub=function(a){if(!(a in window)||(typeof(window[a])!=="function"&&typeof(window[a])!=="object"&&(typeof(window[a])==="undefined"||window[a]!==null))){window[a]=window.cmp_gppstub;window[a].msgHandler=window.cmp_msghandler;window.addEventListener("message",window.cmp_msghandler,false)}};window.cmp_addFrame("__cmpLocator");if(!("cmp_disableusp" in window)||!window.cmp_disableusp){window.cmp_addFrame("__uspapiLocator")}if(!("cmp_disabletcf" in window)||!window.cmp_disabletcf){window.cmp_addFrame("__tcfapiLocator")}if(!("cmp_disablegpp" in window)||!window.cmp_disablegpp){window.cmp_addFrame("__gppLocator")}window.cmp_setStub("__cmp");if(!("cmp_disabletcf" in window)||!window.cmp_disabletcf){window.cmp_setStub("__tcfapi")}if(!("cmp_disableusp" in window)||!window.cmp_disableusp){window.cmp_setStub("__uspapi")}if(!("cmp_disablegpp" in window)||!window.cmp_disablegpp){window.cmp_setGppStub("__gpp")};</script>
+
+
     <!-- Navigation V1-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <!-- NAV CONTAINER -->
@@ -641,6 +650,190 @@
     <!-- Footer-->
     <footer class="bg-dark py-5">
         <div class="container-fluid px-4 px-lg-5">
+                <!-- Privacy Policy-->
+            <div class="privacy-policy">
+                <h1>Privacy Policy</h1>
+<p>Last updated: May 07, 2023</p>
+<p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
+<p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.</p>
+<h1>Interpretation and Definitions</h1>
+<h2>Interpretation</h2>
+<p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.</p>
+<h2>Definitions</h2>
+<p>For the purposes of this Privacy Policy:</p>
+<ul>
+<li>
+<p><strong>Account</strong> means a unique account created for You to access our Service or parts of our Service.</p>
+</li>
+<li>
+<p><strong>Affiliate</strong> means an entity that controls, is controlled by or is under common control with a party, where &quot;control&quot; means ownership of 50% or more of the shares, equity interest or other securities entitled to vote for election of directors or other managing authority.</p>
+</li>
+<li>
+<p><strong>Company</strong> (referred to as either &quot;the Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in this Agreement) refers to Fundi Finance LLC, Ilia Chavchavadze Avenue 60b Tiblisi, Georgia.</p>
+</li>
+<li>
+<p><strong>Cookies</strong> are small files that are placed on Your computer, mobile device or any other device by a website, containing the details of Your browsing history on that website among its many uses.</p>
+</li>
+<li>
+<p><strong>Country</strong> refers to:  Georgia</p>
+</li>
+<li>
+<p><strong>Device</strong> means any device that can access the Service such as a computer, a cellphone or a digital tablet.</p>
+</li>
+<li>
+<p><strong>Personal Data</strong> is any information that relates to an identified or identifiable individual.</p>
+</li>
+<li>
+<p><strong>Service</strong> refers to the Website.</p>
+</li>
+<li>
+<p><strong>Service Provider</strong> means any natural or legal person who processes the data on behalf of the Company. It refers to third-party companies or individuals employed by the Company to facilitate the Service, to provide the Service on behalf of the Company, to perform services related to the Service or to assist the Company in analyzing how the Service is used.</p>
+</li>
+<li>
+<p><strong>Usage Data</strong> refers to data collected automatically, either generated by the use of the Service or from the Service infrastructure itself (for example, the duration of a page visit).</p>
+</li>
+<li>
+<p><strong>Website</strong> refers to Fundi Finance, accessible from <a href="fundifinance.com" rel="external nofollow noopener" target="_blank">fundifinance.com</a></p>
+</li>
+<li>
+<p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
+</li>
+</ul>
+<h1>Collecting and Using Your Personal Data</h1>
+<h2>Types of Data Collected</h2>
+<h3>Personal Data</h3>
+<p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:</p>
+<ul>
+<li>
+<p>Email address</p>
+</li>
+<li>
+<p>First name and last name</p>
+</li>
+<li>
+<p>Usage Data</p>
+</li>
+</ul>
+<h3>Usage Data</h3>
+<p>Usage Data is collected automatically when using the Service.</p>
+<p>Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.</p>
+<p>When You access the Service by or through a mobile device, We may collect certain information automatically, including, but not limited to, the type of mobile device You use, Your mobile device unique ID, the IP address of Your mobile device, Your mobile operating system, the type of mobile Internet browser You use, unique device identifiers and other diagnostic data.</p>
+<p>We may also collect information that Your browser sends whenever You visit our Service or when You access the Service by or through a mobile device.</p>
+<h3>Tracking Technologies and Cookies</h3>
+<p>We use Cookies and similar tracking technologies to track the activity on Our Service and store certain information. Tracking technologies used are beacons, tags, and scripts to collect and track information and to improve and analyze Our Service. The technologies We use may include:</p>
+<ul>
+<li><strong>Cookies or Browser Cookies.</strong> A cookie is a small file placed on Your Device. You can instruct Your browser to refuse all Cookies or to indicate when a Cookie is being sent. However, if You do not accept Cookies, You may not be able to use some parts of our Service. Unless you have adjusted Your browser setting so that it will refuse Cookies, our Service may use Cookies.</li>
+<li><strong>Web Beacons.</strong> Certain sections of our Service and our emails may contain small electronic files known as web beacons (also referred to as clear gifs, pixel tags, and single-pixel gifs) that permit the Company, for example, to count users who have visited those pages or opened an email and for other related website statistics (for example, recording the popularity of a certain section and verifying system and server integrity).</li>
+</ul>
+<p>Cookies can be &quot;Persistent&quot; or &quot;Session&quot; Cookies. Persistent Cookies remain on Your personal computer or mobile device when You go offline, while Session Cookies are deleted as soon as You close Your web browser. Learn more about cookies on the <a href="https://www.freeprivacypolicy.com/blog/sample-privacy-policy-template/#Use_Of_Cookies_And_Tracking" target="_blank">Free Privacy Policy website</a> article.</p>
+<p>We use both Session and Persistent Cookies for the purposes set out below:</p>
+<ul>
+<li>
+<p><strong>Necessary / Essential Cookies</strong></p>
+<p>Type: Session Cookies</p>
+<p>Administered by: Us</p>
+<p>Purpose: These Cookies are essential to provide You with services available through the Website and to enable You to use some of its features. They help to authenticate users and prevent fraudulent use of user accounts. Without these Cookies, the services that You have asked for cannot be provided, and We only use these Cookies to provide You with those services.</p>
+</li>
+<li>
+<p><strong>Cookies Policy / Notice Acceptance Cookies</strong></p>
+<p>Type: Persistent Cookies</p>
+<p>Administered by: Us</p>
+<p>Purpose: These Cookies identify if users have accepted the use of cookies on the Website.</p>
+</li>
+<li>
+<p><strong>Functionality Cookies</strong></p>
+<p>Type: Persistent Cookies</p>
+<p>Administered by: Us</p>
+<p>Purpose: These Cookies allow us to remember choices You make when You use the Website, such as remembering your login details or language preference. The purpose of these Cookies is to provide You with a more personal experience and to avoid You having to re-enter your preferences every time You use the Website.</p>
+</li>
+</ul>
+<p>For more information about the cookies we use and your choices regarding cookies, please visit our Cookies Policy or the Cookies section of our Privacy Policy.</p>
+<h2>Use of Your Personal Data</h2>
+<p>The Company may use Personal Data for the following purposes:</p>
+<ul>
+<li>
+<p><strong>To provide and maintain our Service</strong>, including to monitor the usage of our Service.</p>
+</li>
+<li>
+<p><strong>To manage Your Account:</strong> to manage Your registration as a user of the Service. The Personal Data You provide can give You access to different functionalities of the Service that are available to You as a registered user.</p>
+</li>
+<li>
+<p><strong>For the performance of a contract:</strong> the development, compliance and undertaking of the purchase contract for the products, items or services You have purchased or of any other contract with Us through the Service.</p>
+</li>
+<li>
+<p><strong>To contact You:</strong> To contact You by email, telephone calls, SMS, or other equivalent forms of electronic communication, such as a mobile application's push notifications regarding updates or informative communications related to the functionalities, products or contracted services, including the security updates, when necessary or reasonable for their implementation.</p>
+</li>
+<li>
+<p><strong>To provide You</strong> with news, special offers and general information about other goods, services and events which we offer that are similar to those that you have already purchased or enquired about unless You have opted not to receive such information.</p>
+</li>
+<li>
+<p><strong>To manage Your requests:</strong> To attend and manage Your requests to Us.</p>
+</li>
+<li>
+<p><strong>For business transfers:</strong> We may use Your information to evaluate or conduct a merger, divestiture, restructuring, reorganization, dissolution, or other sale or transfer of some or all of Our assets, whether as a going concern or as part of bankruptcy, liquidation, or similar proceeding, in which Personal Data held by Us about our Service users is among the assets transferred.</p>
+</li>
+<li>
+<p><strong>For other purposes</strong>: We may use Your information for other purposes, such as data analysis, identifying usage trends, determining the effectiveness of our promotional campaigns and to evaluate and improve our Service, products, services, marketing and your experience.</p>
+</li>
+</ul>
+<p>We may share Your personal information in the following situations:</p>
+<ul>
+<li><strong>With Service Providers:</strong> We may share Your personal information with Service Providers to monitor and analyze the use of our Service,  to contact You.</li>
+<li><strong>For business transfers:</strong> We may share or transfer Your personal information in connection with, or during negotiations of, any merger, sale of Company assets, financing, or acquisition of all or a portion of Our business to another company.</li>
+<li><strong>With Affiliates:</strong> We may share Your information with Our affiliates, in which case we will require those affiliates to honor this Privacy Policy. Affiliates include Our parent company and any other subsidiaries, joint venture partners or other companies that We control or that are under common control with Us.</li>
+<li><strong>With business partners:</strong> We may share Your information with Our business partners to offer You certain products, services or promotions.</li>
+<li><strong>With other users:</strong> when You share personal information or otherwise interact in the public areas with other users, such information may be viewed by all users and may be publicly distributed outside.</li>
+<li><strong>With Your consent</strong>: We may disclose Your personal information for any other purpose with Your consent.</li>
+</ul>
+<h2>Retention of Your Personal Data</h2>
+<p>The Company will retain Your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use Your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes, and enforce our legal agreements and policies.</p>
+<p>The Company will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of Our Service, or We are legally obligated to retain this data for longer time periods.</p>
+<h2>Transfer of Your Personal Data</h2>
+<p>Your information, including Personal Data, is processed at the Company's operating offices and in any other places where the parties involved in the processing are located. It means that this information may be transferred to — and maintained on — computers located outside of Your state, province, country or other governmental jurisdiction where the data protection laws may differ than those from Your jurisdiction.</p>
+<p>Your consent to this Privacy Policy followed by Your submission of such information represents Your agreement to that transfer.</p>
+<p>The Company will take all steps reasonably necessary to ensure that Your data is treated securely and in accordance with this Privacy Policy and no transfer of Your Personal Data will take place to an organization or a country unless there are adequate controls in place including the security of Your data and other personal information.</p>
+<h2>Delete Your Personal Data</h2>
+<p>You have the right to delete or request that We assist in deleting the Personal Data that We have collected about You.</p>
+<p>Our Service may give You the ability to delete certain information about You from within the Service.</p>
+<p>You may update, amend, or delete Your information at any time by signing in to Your Account, if you have one, and visiting the account settings section that allows you to manage Your personal information. You may also contact Us to request access to, correct, or delete any personal information that You have provided to Us.</p>
+<p>Please note, however, that We may need to retain certain information when we have a legal obligation or lawful basis to do so.</p>
+<h2>Disclosure of Your Personal Data</h2>
+<h3>Business Transactions</h3>
+<p>If the Company is involved in a merger, acquisition or asset sale, Your Personal Data may be transferred. We will provide notice before Your Personal Data is transferred and becomes subject to a different Privacy Policy.</p>
+<h3>Law enforcement</h3>
+<p>Under certain circumstances, the Company may be required to disclose Your Personal Data if required to do so by law or in response to valid requests by public authorities (e.g. a court or a government agency).</p>
+<h3>Other legal requirements</h3>
+<p>The Company may disclose Your Personal Data in the good faith belief that such action is necessary to:</p>
+<ul>
+<li>Comply with a legal obligation</li>
+<li>Protect and defend the rights or property of the Company</li>
+<li>Prevent or investigate possible wrongdoing in connection with the Service</li>
+<li>Protect the personal safety of Users of the Service or the public</li>
+<li>Protect against legal liability</li>
+</ul>
+<h2>Security of Your Personal Data</h2>
+<p>The security of Your Personal Data is important to Us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While We strive to use commercially acceptable means to protect Your Personal Data, We cannot guarantee its absolute security.</p>
+<h1>Children's Privacy</h1>
+<p>Our Service does not address anyone under the age of 13. We do not knowingly collect personally identifiable information from anyone under the age of 13. If You are a parent or guardian and You are aware that Your child has provided Us with Personal Data, please contact Us. If We become aware that We have collected Personal Data from anyone under the age of 13 without verification of parental consent, We take steps to remove that information from Our servers.</p>
+<p>If We need to rely on consent as a legal basis for processing Your information and Your country requires consent from a parent, We may require Your parent's consent before We collect and use that information.</p>
+<h1>Links to Other Websites</h1>
+<p>Our Service may contain links to other websites that are not operated by Us. If You click on a third party link, You will be directed to that third party's site. We strongly advise You to review the Privacy Policy of every site You visit.</p>
+<p>We have no control over and assume no responsibility for the content, privacy policies or practices of any third party sites or services.</p>
+<h1>Changes to this Privacy Policy</h1>
+<p>We may update Our Privacy Policy from time to time. We will notify You of any changes by posting the new Privacy Policy on this page.</p>
+<p>We will let You know via email and/or a prominent notice on Our Service, prior to the change becoming effective and update the &quot;Last updated&quot; date at the top of this Privacy Policy.</p>
+<p>You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.</p>
+<h1>Contact Us</h1>
+<p>If you have any questions about this Privacy Policy, You can contact us:</p>
+<ul>
+<li>
+<p>By email: founder@fundifinance.com</p>
+</li>
+<li>
+<p>By phone number: 995 591 190999</p>
+</li>
+</ul>
+            </div>
             <div class="small text-center text-muted my-4"><a class="btn btn-link"
                     href="mailto:founder@fundifinance.com">founder@fundifinance.com</a></div>
             <!-- Add font awesome icons -->
@@ -660,10 +853,7 @@
                 <a class="social-icon" target="_blank" href="https://www.youtube.com/channel/UCH6IQcEKAuDiFlIFvyM9Trg"><i
                             class="fab fa-youtube"></i></a>
             </div>
-
             <div class="small text-center text-muted">Copyright &copy; 2021 - Fundi Finance</div>
-
-
         </div>
     </footer>
     <!-- Bootstrap core JS-->
